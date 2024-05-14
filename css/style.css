@@ -33,6 +33,7 @@ h1, h2, h3, h4, a {
 
 p {
     font-family: 'montserrat', sans-serif;
+    line-height: 1.5;
 }
 
 header {    
@@ -224,6 +225,7 @@ header nav img{
     font-weight: 300;
     margin-left: 75px;
     width: 80%;
+    text-align: justify;
 }
 
 .knap {
@@ -398,6 +400,7 @@ header nav img{
     font-weight: 300;
     margin-left: 75px;
     width: 80%;
+    text-align: justify;
 }
 
 .openinghours {
