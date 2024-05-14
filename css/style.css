@@ -571,9 +571,23 @@ footer h4 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.footerfollow img {
-    width: 200px;
+.socials img {
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 1s;
 }
+
+.socials img:hover {
+    transform: scale(1.05);
+}
+
+.footerlogo img {
+    width: 250px;
+    cursor: pointer;
+}
+
 
 /* Definering af breakpoints */
 
