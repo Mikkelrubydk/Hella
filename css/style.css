@@ -289,7 +289,6 @@ header nav img{
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     border-radius: 10px;
@@ -347,9 +346,9 @@ header nav img{
 
   .flip-card-back h4 {
     position: absolute;
-    margin-right: 50px;
+    letter-spacing: 10px;
     bottom: 10px;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--beige);
   }
 
@@ -374,7 +373,7 @@ header nav img{
     text-align: left;
     margin: 5px 0;
     width: 300px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     margin-left: 30px;
   }
@@ -602,6 +601,7 @@ footer h4 {
 
 .menunavigation {
     width: 30%;
+    position: fixed;
 }
 
 .menunavigation h1 {
@@ -627,6 +627,7 @@ footer h4 {
 
 .menuindhold {
     width: 70%;
+    margin-left: 30%;
 }
 
 .menuindhold h2 {
@@ -652,7 +653,7 @@ footer h4 {
     font-size: 15px;
 }
 
-.menuindhold .drinksbeskrivelse {
+.menuindhold .beskrivelse {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -664,13 +665,49 @@ footer h4 {
     justify-content: flex-end;
 }
 
-.menuindhold article {
+.menuindhold .barstuffindhold {
       margin: 100px 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr); 
       grid-template-rows: repeat(3, 1fr); 
       gap: 50px; 
+}
 
+.menuindhold .seasonalindhold {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+}
+
+.menuindhold .fridgeindhold {
+    margin: 100px 0 150px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 250px); 
+    grid-template-rows: repeat(2, 150px); 
+    gap: 50px; 
+}
+
+.menuindhold .fridgeindhold h3 {
+    margin-bottom: 10px;
+}
+
+.menuindhold .nonalcoholindhold {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+}
+
+.menuindhold .kitchenindhold {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px; 
+}
+
+.menuindhold .kitchenindhold h3 {
+    margin-bottom: 10px;
 }
 
 /* Definering af breakpoints */
