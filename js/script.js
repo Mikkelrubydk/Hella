@@ -5,7 +5,7 @@ const pilNed = document.querySelector('.pilned');
 let menuOpen = false;
 
 document.addEventListener('scroll', () => {
-    let nav = document.querySelector(`header nav`);
+    let nav = document.querySelector(`.navbar`);
   
     if (window.scrollY === 0) {
       nav.classList.add(`scrolled`);
@@ -51,4 +51,6 @@ document.querySelectorAll('.flip-card').forEach(function(card) {
         card.querySelector('.flip-card-inner').classList.toggle('flipped');
     });
 });
+
+
 
