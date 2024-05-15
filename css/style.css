@@ -289,7 +289,6 @@ header nav img{
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     border-radius: 10px;
@@ -347,9 +346,9 @@ header nav img{
 
   .flip-card-back h4 {
     position: absolute;
-    margin-right: 50px;
+    letter-spacing: 10px;
     bottom: 10px;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--beige);
   }
 
@@ -374,7 +373,7 @@ header nav img{
     text-align: left;
     margin: 5px 0;
     width: 300px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 100;
     margin-left: 30px;
   }
