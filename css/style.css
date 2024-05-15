@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border;
     scroll-behavior: smooth;  
+    text-decoration: none;
 }
 
 :root {
@@ -592,6 +593,86 @@ footer h4 {
 }
 
 
+/* STYLING AF MENUKORT.HTML */
+
+.menukort {
+    display: flex;
+    padding: 100px;
+}
+
+.menunavigation {
+    width: 30%;
+}
+
+.menunavigation h1 {
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.menunavigation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menunavigation ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.menunavigation ul li a {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.menuindhold {
+    width: 70%;
+}
+
+.menuindhold h2 {
+    font-size: 75px;
+    color: var(--beige);
+    background-color: var(--sorttekst);
+    width: fit-content;
+    padding: 0px 5px;
+}
+
+.menuindhold h3 {
+    font-size: 40px;
+}
+
+.menuindhold .tastetekst {
+    font-size: 12px;
+    opacity: 0.5;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+.menuindhold p {
+    font-size: 15px;
+}
+
+.menuindhold .drinksbeskrivelse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.menuindhold .pris {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuindhold article {
+      margin: 100px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(3, 1fr); 
+      gap: 50px; 
+
+}
+
 /* Definering af breakpoints */
 
 @media only screen and (max-width: 1080px) {
@@ -633,7 +714,7 @@ footer h4 {
     .burgerindhold ul {
         margin: 0;
         justify-content: center;
-        align-items: center;
+        align-items: left;
     }
 
     .bar-stuff, .about, .follow-us {
