@@ -39,6 +39,7 @@ h1, h2, h3, h4, a {
 p {
     font-family: 'montserrat', sans-serif;
     line-height: 1.5;
+    color: var(--sorttekst);
 }
 
 header {    
@@ -241,7 +242,7 @@ header nav img{
     height: 50px;
     cursor: pointer;
     margin-left: 75px;
-    background: var(--blue);
+    background: var(--sorttekst);
     border-radius: 10px;
     transition: 1s;
     margin-top: 20px;
@@ -258,8 +259,9 @@ header nav img{
     border: none;
     color: var(--beige);
     font-weight: 900;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'montserrat', sans-serif;
+    font-weight: 400;
     cursor: pointer;
 }
 
@@ -871,9 +873,63 @@ footer h4 {
   }
 
   .discover {
+    margin: 0 auto;
     padding: 100px;
   }
 
+  .discover h2 {
+    font-size: 50px;
+    margin-left: 75px;
+    margin-bottom: 10px;
+  }
+
+  .discover p {
+    margin-left: 75px;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 80%;
+  }
+
+  .discover .knap {
+    width: 300px;
+  }
+  
+
+  .discover .knap a button {
+    font-size: 20px;
+  }
+
+  .eventbilleder {
+    display: flex;
+    padding: 0 100px 100px 100px;
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    gap: 10px;
+    
+  }
+
+  .eventbilleder .venyl img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .eventbilleder .hellavideo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .eventbilleder .venyl {
+    width: 40%;
+  }
+
+  .eventbilleder .hellavideo {
+    width: 60%;
+  }
 
 /* Definering af breakpoints */
 
