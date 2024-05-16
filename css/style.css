@@ -11,8 +11,8 @@
     --hellaorange: #d96704;
     --beige: #d9c9ba;
     --blue: #031762;
-    --bluegreen: rgba(2, 73, 89, 1);
-    --taracotta: #8C4402;
+    --bluegreen: #024959;
+    --taracotta: #8C4303;
 }
 
 body {
@@ -1100,7 +1100,53 @@ footer h4 {
 
 
 .gavekort-sektion {
-    background-image: url('../img/gavekort-billede.png');
+    background-image: url('../img/gavekort-billede.webp');
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.gavekort-sektion h1 {
+    font-size: 6rem;
+    color: #d96704;
+    padding-top: 12rem;
+    padding-left: 9rem;
+}
+
+.gavekort-sektion h2 {
+    font-size: 6rem;
+    color: #d96704;
+    padding-left: 9rem;
+}
+
+.vælg-gavekort {
+    display: flex;
+    flex-direction: row;
+}
+
+.vælg-gavekort img {
+  height: 3rem;
+  margin-top: 2.3rem;
+  margin-left: 5px;
+}
+
+.knap-gavekort a button {
+    font-family: 'Montserrat', sans-serif;
+    color: #d96704;
+    font-size: 1rem;
+    background: none;
+    border: #d96704 2px solid;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    margin-left: 9rem;
+}
+
+.gavekort-tekst {
+    color: #d9c9ba;
+    margin-left: 9rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 
