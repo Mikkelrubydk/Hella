@@ -1142,11 +1142,14 @@ footer h4 {
     margin-left: 9rem;
 }
 
-.gavekort-tekst {
-    color: #d9c9ba;
+.gavekort-tekst  {
     margin-left: 9rem;
     margin-top: 2rem;
     font-size: 1.2rem;
+}
+
+.gavekort-tekst p {
+    color: #d9c9ba;
 }
 
 
