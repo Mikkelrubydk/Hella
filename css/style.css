@@ -31,7 +31,9 @@ body {
 
 h1, h2, h3, h4, a {
     color: var(--sorttekst);
-    font-family: "franklin-gothic-urw-comp", sans-serif;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 p {
@@ -987,4 +989,40 @@ footer h4 {
  }
 
 
+/* Styling af 404 side */
+/* __________________________________________________ */
+/* ____________________________________________________ */
 
+.fejl-side {
+    height: 100vh;  
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fejl-billede {
+    border-radius: 1rem;
+    width: 40rem;
+}
+
+
+.fejl-side h1 {
+    margin: 2rem;
+    font-size:2rem;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.fejl-side p {
+    margin: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fejl-side a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
