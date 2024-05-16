@@ -623,6 +623,7 @@ footer h4 {
 .menunavigation ul li a {
     font-size: 25px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .menuindhold {
