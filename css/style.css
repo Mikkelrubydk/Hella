@@ -266,6 +266,8 @@ header nav img{
 }
 
 /* styling af flipcards */
+/* __________________________________________________ */
+/* ____________________________________________________ */
 
 .flipcards {
     display: flex;
@@ -385,6 +387,8 @@ header nav img{
   }
 
   /* Tilføjer flipped for at optimerer samme effekt på telefonen ved klik i */
+  /* __________________________________________________ */
+/* ____________________________________________________ */
 
   .flipped {
     transform: rotateY(180deg);
@@ -599,6 +603,8 @@ footer h4 {
 
 
 /* STYLING AF MENUKORT.HTML */
+/* __________________________________________________ */
+/* ____________________________________________________ */
 
 .menukort {
     display: flex;
@@ -724,6 +730,8 @@ footer h4 {
 }
 
 /* STYLING AF EVENTS.HTML */
+/* __________________________________________________ */
+/* ____________________________________________________ */
 
 .flipcards-event {
     display: flex;
@@ -932,6 +940,8 @@ footer h4 {
   }
 
 /* Definering af breakpoints */
+/* __________________________________________________ */
+/* ____________________________________________________ */
 
 @media only screen and (max-width: 1080px) {
 
@@ -1082,3 +1092,17 @@ footer h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
+
+
+/* styling af gavekort siden */
+/* __________________________________________________ */
+/* ____________________________________________________ */
+
+
+.gavekort-sektion {
+    background-image: url('../img/gavekort-billede.png');
+}
+
+
+
+
