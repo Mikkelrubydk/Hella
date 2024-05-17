@@ -1218,12 +1218,21 @@ footer h4 {
 .information section article {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 80%;
 }
 
 .information .knap {
+  display: flex;
   margin: 30px 0 0 0;
+}
+
+.knapcontainer {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+flex-grow: 1;
 }
 
 .information figure img {
