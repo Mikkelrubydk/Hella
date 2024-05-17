@@ -37,8 +37,10 @@ h1, h2, h3, h4, a {
 }
 
 p {
-    font-family: 'montserrat', sans-serif;
     line-height: 1.5;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--sorttekst);
 }
 
@@ -1177,28 +1179,46 @@ footer h4 {
     color: #d9c9ba;
 }
 
-.image-gallery {
-  margin-left: 200px;
-  width: 80%;
-  overflow: hidden;
-  border: 2px solid #ccc;
-}
+/* styling af billede sektion */
+/* starter med at style pilene */
 
-.image-container {
+.pile {
   display: flex;
-  transition: transform 0.3s ease-in-out;
+  flex-direction: row;
+  justify-content: end;
 }
 
-.image-container img {
-  height: 300px;
-  border: 0.5rem solid #ccc;
-  margin-right: 10px;
+.pile img {
+  width: 3rem;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-.image-container img:last-child {
-  margin-right: 0;
+
+.pil-højre {
+  transform: rotate(-180deg);
+  margin-right: 200px;
 }
 
+.pile img:hover {
+  cursor: pointer;
+}
+/* styler billede container*/ 
+
+.billede-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 0 20px;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.billede-container img {
+  height: 20rem;
+  border-radius: 1rem;
+}
 
 /* styling af about siden */
 
@@ -1206,6 +1226,7 @@ footer h4 {
 /* ____________________________________________________ */
 
 .abouthella {
+
   display: flex;
   flex-direction: column;
   padding: 100px;
