@@ -409,7 +409,6 @@ header nav img{
     font-weight: 300;
     margin-left: 100px;
     width: 80%;
-    text-align: justify;
 }
 
 .openinghours {
@@ -903,7 +902,6 @@ footer h4 {
   .discover p {
     margin-left: 100px;
     margin-bottom: 2rem;
-    text-align: justify;
     width: 80%;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -1215,7 +1213,6 @@ footer h4 {
 
 .information section figure {
   width: 100%;
-  height: 100%;
 }
 
 .information section article {
@@ -1229,13 +1226,9 @@ footer h4 {
   margin: 30px 0 0 0;
 }
 
-.information .knap button {
-
-}
-
 .information figure img {
   width: 100%;
-  height: 100%;
+  height: 500px;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -1248,7 +1241,7 @@ footer h4 {
 .information p {
   margin-top: 30px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
