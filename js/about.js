@@ -1,11 +1,11 @@
-function showMore(moreTextId, btn) {
-    var moreText = document.getElementById(moreTextId);
+function showMore(mereTekstId, button) {
+    var mereTekst = document.getElementById(mereTekstId);
 
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-        moreText.style.display = "inline";
-        btn.textContent = "READ LESS";
+    if (mereTekst.style.display === "none" || mereTekst.style.display === "") {
+        mereTekst.style.display = "inline";
+        button.textContent = "READ LESS";
     } else {
-        moreText.style.display = "none";
-        btn.textContent = "READ MORE";
+        mereTekst.style.display = "none";
+        button.textContent = "READ MORE";
     }
 }
