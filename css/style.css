@@ -228,10 +228,10 @@ header nav img{
 .bar-stuff p {
     font-size: 1.5rem;
     margin-left: 100px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 80%;
-    text-align: justify;
 }
 
 .knap {
@@ -1148,6 +1148,11 @@ footer h4 {
   margin-left: 5px;
 }
 
+.vælg-gavekort img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .knap-gavekort a button {
     font-family: 'Montserrat', sans-serif;
     color: #d96704;
@@ -1157,6 +1162,11 @@ footer h4 {
     padding: 5px 10px;
     border-radius: 0.5rem;
     margin-left: 200px;
+}
+
+.knap-gavekort a button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .gavekort-tekst  {
