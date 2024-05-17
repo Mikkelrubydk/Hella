@@ -253,7 +253,7 @@ header nav img{
     transform: scale(1.05);
 }
 
-.knap a button {
+.knap button {
     background-color: transparent;
     text-decoration: none;
     border: none;
@@ -1202,6 +1202,10 @@ footer h4 {
   margin: 30px 0 0 0;
 }
 
+.information .knap button {
+
+}
+
 .information figure img {
   width: 100%;
   height: 100%;
@@ -1219,4 +1223,7 @@ footer h4 {
   text-align: center;
 }
 
+.vismere {
+  display: none;
+}
 
