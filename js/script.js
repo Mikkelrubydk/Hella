@@ -23,7 +23,7 @@ menuBtn.addEventListener('click', () => {
       centerLogo.style.transition = "opacity 1s";
       pilNed.style.transition = "opacity 1s";
       centerLogo.style.opacity = "0";
-      burgerIndhold.style.animation = "fade-in 1s forwards";
+      burgerIndhold.style.animation = "fade-in .5s forwards";
       burgerIndhold.style.opacity = "1";
       pilNed.style.opacity = "0";
     } else {

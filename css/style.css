@@ -194,14 +194,16 @@ header nav img{
     }
   }
 
+
 .pilned img {
     width: 50px;
     position: absolute;
     left: 48.4%;
-    transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%);
     top: 90%;
-    animation: bounce 3s infinite;
+    animation: fade-in-animation 1.5s forwards, bounce 3s infinite; 
     cursor: pointer;
+    
 }
 
 @keyframes bounce {
@@ -737,16 +739,26 @@ footer h4 {
     margin-bottom: 10px;
 }
 
+#bar, #seasonal, #fridge, #nonalcohol, #kitchen {
+  scroll-margin-top: 120px;
+}
+
 /* STYLING AF EVENTS.HTML */
 /* __________________________________________________ */
 /* ____________________________________________________ */
+
+.overskrift {
+  font-size: 5rem;
+  padding: 100px 100px 2rem 100px;
+  margin-left: 100px;
+}
 
 .flipcards-event {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 100px;
+    padding: 0 100px 100px 100px;
 }
 
 .flip-card-event {
@@ -1223,7 +1235,7 @@ footer h4 {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
-  gap: 20px;
+  gap: 100px 20px;
 }
 
 .information section {
@@ -1243,6 +1255,11 @@ footer h4 {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+}
+
+.information article p a {
+  font-weight: 800;
+  font-family: 'montserrat', sans-serif;
 }
 
 .information .knap {
