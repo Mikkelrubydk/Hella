@@ -228,10 +228,10 @@ header nav img{
 .bar-stuff p {
     font-size: 1.5rem;
     margin-left: 100px;
-    font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     width: 80%;
-    text-align: justify;
 }
 
 .knap {
