@@ -1089,16 +1089,20 @@ footer h4 {
 
 
 .fejl-side h1 {
-    margin: 2rem;
-    font-size:2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size:3rem;
     font-family: "franklin-gothic-urw", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
 .fejl-side p {
-    margin: 0.5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
 }
 
 .fejl-side a {
@@ -1121,16 +1125,16 @@ footer h4 {
 
 
 .gavekort-sektion h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     color: #d96704;
     padding-top: 12rem;
-    padding-left: 9rem;
+    margin-left: 200px;
 }
 
 .gavekort-sektion h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     color: #d96704;
-    padding-left: 9rem;
+    margin-left: 200px;
 }
 
 .vælg-gavekort {
@@ -1139,7 +1143,7 @@ footer h4 {
 }
 
 .vælg-gavekort img {
-  height: 3rem;
+  height: 2rem;
   margin-top: 2.3rem;
   margin-left: 5px;
 }
@@ -1152,11 +1156,11 @@ footer h4 {
     border: #d96704 2px solid;
     padding: 5px 10px;
     border-radius: 0.5rem;
-    margin-left: 9rem;
+    margin-left: 200px;
 }
 
 .gavekort-tekst  {
-    margin-left: 9rem;
+    margin-left: 200px;
     margin-top: 2rem;
     font-size: 1.2rem;
 }
