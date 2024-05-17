@@ -1183,9 +1183,9 @@ footer h4 {
 }
 
 .abouthella h1 {
-  font-size: 6rem;
-  margin-left: 75px;
-  margin-bottom: 50px ;
+  font-size: 5rem;
+  margin-left: 100px;
+  margin-bottom: 2rem;
 }
 
 .information {
@@ -1200,7 +1200,7 @@ footer h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400px;
+  width: 355px;
 }
 
 .information section figure {
@@ -1227,13 +1227,15 @@ footer h4 {
 }
 
 .information h2 {
-  font-size: 50px;
+  font-size: 3rem;
   margin-top: 30px;
 }
 
 .information p {
   margin-top: 30px;
   text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 
