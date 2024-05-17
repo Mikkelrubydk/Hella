@@ -221,15 +221,15 @@ header nav img{
   }
 
 .bar-stuff h2 {
-    font-size: 6rem;
-    width: 80%;
-    margin-left: 75px;
+    font-size: 5rem;
+    margin-left: 100px;
 }
 
 .bar-stuff p {
     font-size: 1.5rem;
+    margin-left: 100px;
     font-weight: 300;
-    margin-left: 75px;
+    font-family: 'Montserrat', sans-serif;
     width: 80%;
     text-align: justify;
 }
@@ -241,7 +241,7 @@ header nav img{
     width: 150px;
     height: 50px;
     cursor: pointer;
-    margin-left: 75px;
+    margin-left: 100px;
     background: var(--sorttekst);
     border-radius: 10px;
     transition: 1s;
@@ -258,7 +258,6 @@ header nav img{
     text-decoration: none;
     border: none;
     color: var(--beige);
-    font-weight: 900;
     font-size: 20px;
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
@@ -279,7 +278,7 @@ header nav img{
 
 .flip-card {
     background-color: transparent;
-    width: 350px;
+    width: 335px;
     height: 450px;
     perspective: 1000px;
   }
@@ -396,19 +395,19 @@ header nav img{
 
 
   .about {
-    padding: 200px 100px 100px 100px;
+    padding: 35px 100px ;
   }
 
 .about h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     width: 80%;
-    margin-left: 75px;
+    margin-left: 100px;
 }
 
 .about p {
     font-size: 1.5rem;
     font-weight: 300;
-    margin-left: 75px;
+    margin-left: 100px;
     width: 80%;
     text-align: justify;
 }
@@ -416,13 +415,18 @@ header nav img{
 .openinghours {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom:3rem;
 
 }
 
 .openinghours h3{
-    font-size: 50px;
+    font-size: 3rem;
     margin-top: 100px;
     margin-bottom: 20px;
 }
@@ -433,31 +437,33 @@ header nav img{
     flex-direction: column;
     display: flex;
     width: 50%;
-    margin-top: -100px;
+    
 }
 
 .openinghours th {
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: 300;
 }
 
 .openinghours td {
-    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 1.5;
     text-align: right;
     padding: 10px 0;
     font-weight: 300;
 }
 
 .openinghours figure {
-    width: 50%;
+    width: 40%;
 }
 
 .openinghours figure img {
     position: relative;
-    width: 550px;
+    width: 500px;
     border-radius: 20px;
     z-index: 1;
+    margin-top: 100px;
 }
 
 #texture {
@@ -472,16 +478,16 @@ header nav img{
 }
 
 .follow-us h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     width: 80%;
-    margin-left: 75px;
+    margin-left: 100px;
 }
 
 .follow-us figure {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 35px;
     margin-top: 50px;
 }
   
@@ -500,7 +506,7 @@ header nav img{
 
 .follow-us h3 {
     text-align: right;
-    margin-right: 80px;
+    margin-right: 105px;
     margin-top: 20px;
     font-size: 30px;
     font-weight: 500;
@@ -610,6 +616,7 @@ footer h4 {
     display: flex;
     padding: 100px;
     position: relative;
+    margin-left: 100px;
 }
 
 .menunavigation {
@@ -623,7 +630,7 @@ footer h4 {
   }
 
 .menunavigation h1 {
-    font-size: 100px;
+    font-size: 5rem;
     font-weight: 900;
 }
 
@@ -639,37 +646,39 @@ footer h4 {
 }
 
 .menunavigation ul li a {
-    font-size: 25px;
+    font-size:1.5rem;
     font-weight: 900;
     cursor: pointer;
 }
 
 .menuindhold {
     width: 70%;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
 .menuindhold h2 {
-    font-size: 75px;
+    font-size: 3rem;
     color: var(--beige);
     background-color: var(--sorttekst);
     width: fit-content;
     padding: 0px 5px;
+    margin-top: 1.5rem;
+    margin-bottom: -2.5rem;
 }
 
 .menuindhold h3 {
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 
 .menuindhold .tastetekst {
-    font-size: 12px;
+    font-size: 0.8rem;
     opacity: 0.5;
     font-style: italic;
     padding: 10px 0;
 }
 
 .menuindhold p {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .menuindhold .beskrivelse {
