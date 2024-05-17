@@ -14,47 +14,33 @@ plusBtn.addEventListener('click', function() {
 });
 
 minusBtn.addEventListener('click', function() {
-    if (currentAmount > 100) { // sikre at beløber ikke går under 100 dkk 
+    if (currentAmount > 100) { // sikre at beløber ikke går under 100 
         currentAmount -= 100;
         updateAmount();
     }
 });
 
 
-// laver billede serie, man kan klikke sig igennem 
-
 function updateAmount() {
     giftcardAmount.textContent = `${currentAmount} DKK`;
 }
 
+
+// laver billede serie, man kan klikke sig igennem 
 document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.image-container');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+    const leftArrow = document.querySelector('.pil-venstre');
+    const rightArrow = document.querySelector('.pil-højre');
+    const images = document.querySelectorAll('.billede-container img');
 
-    container.addEventListener('mousedown', (e) => {
-        isDown = true;
-        container.classList.add('active');
-        startX = e.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
+    let currentIndex = 0;
+
+    leftArrow.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 
-    container.addEventListener('mouseleave', () => {
-        isDown = false;
-        container.classList.remove('active');
-    });
-
-    container.addEventListener('mouseup', () => {
-        isDown = false;
-        container.classList.remove('active');
-    });
-
-    container.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 2; //scroll-fast
-        container.scrollLeft = scrollLeft - walk;
+    rightArrow.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
 });
