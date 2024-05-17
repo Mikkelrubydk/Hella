@@ -37,8 +37,10 @@ h1, h2, h3, h4, a {
 }
 
 p {
-    font-family: 'montserrat', sans-serif;
     line-height: 1.5;
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--sorttekst);
 }
 
@@ -198,7 +200,7 @@ header nav img{
     width: 50px;
     position: absolute;
     left: 48.4%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(90deg);
     top: 90%;
     animation: bounce 3s infinite;
     cursor: pointer;
@@ -1177,6 +1179,46 @@ footer h4 {
     color: #d9c9ba;
 }
 
+/* styling af billede sektion */
+/* starter med at style pilene */
+
+.pile {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.pile img {
+  width: 3rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+.pil-højre {
+  transform: rotate(-180deg);
+  margin-right: 200px;
+}
+
+.pile img:hover {
+  cursor: pointer;
+}
+/* styler billede container*/ 
+
+.billede-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  gap: 0 20px;
+  margin-bottom: 2rem;
+  width: 70%;
+}
+
+.billede-container img {
+  height: 20rem;
+  border-radius: 1rem;
+}
 
 /* styling af about siden */
 
@@ -1184,6 +1226,7 @@ footer h4 {
 /* ____________________________________________________ */
 
 .abouthella {
+
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -1218,12 +1261,21 @@ footer h4 {
 .information section article {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 80%;
 }
 
 .information .knap {
+  display: flex;
   margin: 30px 0 0 0;
+}
+
+.knapcontainer {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+flex-grow: 1;
 }
 
 .information figure img {
