@@ -198,7 +198,7 @@ header nav img{
     width: 50px;
     position: absolute;
     left: 48.4%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(90deg);
     top: 90%;
     animation: bounce 3s infinite;
     cursor: pointer;
@@ -1175,6 +1175,28 @@ footer h4 {
 
 .gavekort-tekst p {
     color: #d9c9ba;
+}
+
+.image-gallery {
+  margin-left: 200px;
+  width: 80%;
+  overflow: hidden;
+  border: 2px solid #ccc;
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img {
+  height: 300px;
+  border: 0.5rem solid #ccc;
+  margin-right: 10px;
+}
+
+.image-container img:last-child {
+  margin-right: 0;
 }
 
 
