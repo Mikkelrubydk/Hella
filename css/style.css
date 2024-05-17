@@ -409,7 +409,6 @@ header nav img{
     font-weight: 300;
     margin-left: 100px;
     width: 80%;
-    text-align: justify;
 }
 
 .openinghours {
@@ -903,7 +902,6 @@ footer h4 {
   .discover p {
     margin-left: 100px;
     margin-bottom: 2rem;
-    text-align: justify;
     width: 80%;
     font-size: 1.5rem;
     line-height: 1.5;
