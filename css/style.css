@@ -11,8 +11,8 @@
     --hellaorange: #d96704;
     --beige: #d9c9ba;
     --blue: #031762;
-    --bluegreen: rgba(2, 73, 89, 1);
-    --taracotta: #8C4402;
+    --bluegreen: #024959;
+    --taracotta: #8C4303;
 }
 
 body {
@@ -221,15 +221,15 @@ header nav img{
   }
 
 .bar-stuff h2 {
-    font-size: 6rem;
-    width: 80%;
-    margin-left: 75px;
+    font-size: 5rem;
+    margin-left: 100px;
 }
 
 .bar-stuff p {
     font-size: 1.5rem;
+    margin-left: 100px;
     font-weight: 300;
-    margin-left: 75px;
+    font-family: 'Montserrat', sans-serif;
     width: 80%;
     text-align: justify;
 }
@@ -241,7 +241,7 @@ header nav img{
     width: 150px;
     height: 50px;
     cursor: pointer;
-    margin-left: 75px;
+    margin-left: 100px;
     background: var(--sorttekst);
     border-radius: 10px;
     transition: 1s;
@@ -253,12 +253,11 @@ header nav img{
     transform: scale(1.05);
 }
 
-.knap a button {
+.knap button {
     background-color: transparent;
     text-decoration: none;
     border: none;
     color: var(--beige);
-    font-weight: 900;
     font-size: 20px;
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
@@ -279,7 +278,7 @@ header nav img{
 
 .flip-card {
     background-color: transparent;
-    width: 350px;
+    width: 335px;
     height: 450px;
     perspective: 1000px;
   }
@@ -396,19 +395,19 @@ header nav img{
 
 
   .about {
-    padding: 200px 100px 100px 100px;
+    padding: 35px 100px ;
   }
 
 .about h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     width: 80%;
-    margin-left: 75px;
+    margin-left: 100px;
 }
 
 .about p {
     font-size: 1.5rem;
     font-weight: 300;
-    margin-left: 75px;
+    margin-left: 100px;
     width: 80%;
     text-align: justify;
 }
@@ -416,13 +415,18 @@ header nav img{
 .openinghours {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 50px;
+    margin-bottom:3rem;
 
 }
 
 .openinghours h3{
-    font-size: 50px;
+    font-size: 3rem;
     margin-top: 100px;
     margin-bottom: 20px;
 }
@@ -433,31 +437,33 @@ header nav img{
     flex-direction: column;
     display: flex;
     width: 50%;
-    margin-top: -100px;
+    
 }
 
 .openinghours th {
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: 300;
 }
 
 .openinghours td {
-    font-size: 30px;
+    font-size: 1.5rem;
+    line-height: 1.5;
     text-align: right;
     padding: 10px 0;
     font-weight: 300;
 }
 
 .openinghours figure {
-    width: 50%;
+    width: 40%;
 }
 
 .openinghours figure img {
     position: relative;
-    width: 550px;
+    width: 500px;
     border-radius: 20px;
     z-index: 1;
+    margin-top: 100px;
 }
 
 #texture {
@@ -472,16 +478,16 @@ header nav img{
 }
 
 .follow-us h2 {
-    font-size: 6rem;
+    font-size: 5rem;
     width: 80%;
-    margin-left: 75px;
+    margin-left: 100px;
 }
 
 .follow-us figure {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 35px;
     margin-top: 50px;
 }
   
@@ -500,7 +506,7 @@ header nav img{
 
 .follow-us h3 {
     text-align: right;
-    margin-right: 80px;
+    margin-right: 105px;
     margin-top: 20px;
     font-size: 30px;
     font-weight: 500;
@@ -610,6 +616,7 @@ footer h4 {
     display: flex;
     padding: 100px;
     position: relative;
+    margin-left: 100px;
 }
 
 .menunavigation {
@@ -623,7 +630,7 @@ footer h4 {
   }
 
 .menunavigation h1 {
-    font-size: 100px;
+    font-size: 5rem;
     font-weight: 900;
 }
 
@@ -639,37 +646,39 @@ footer h4 {
 }
 
 .menunavigation ul li a {
-    font-size: 25px;
+    font-size:1.5rem;
     font-weight: 900;
     cursor: pointer;
 }
 
 .menuindhold {
     width: 70%;
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
 .menuindhold h2 {
-    font-size: 75px;
+    font-size: 3rem;
     color: var(--beige);
     background-color: var(--sorttekst);
     width: fit-content;
     padding: 0px 5px;
+    margin-top: 1.5rem;
+    margin-bottom: -2.5rem;
 }
 
 .menuindhold h3 {
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 
 .menuindhold .tastetekst {
-    font-size: 12px;
+    font-size: 0.8rem;
     opacity: 0.5;
     font-style: italic;
     padding: 10px 0;
 }
 
 .menuindhold p {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .menuindhold .beskrivelse {
@@ -737,7 +746,7 @@ footer h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     padding: 100px;
 }
 
@@ -876,7 +885,7 @@ footer h4 {
   .flip-card-event h3:nth-child(2) {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-top: 30px;
   }
 
@@ -886,16 +895,18 @@ footer h4 {
   }
 
   .discover h2 {
-    font-size: 50px;
-    margin-left: 75px;
+    font-size: 5rem;
+    margin-left: 100px;
     margin-bottom: 10px;
   }
 
   .discover p {
-    margin-left: 75px;
-    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-bottom: 2rem;
     text-align: justify;
     width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 
   .discover .knap {
@@ -909,10 +920,12 @@ footer h4 {
 
   .eventbilleder {
     display: flex;
+    justify-content: center;
     padding: 0 100px 100px 100px;
     height: 50vh;
     width: 80%;
-    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
     gap: 10px;
     
   }
@@ -925,7 +938,7 @@ footer h4 {
   }
 
   .eventbilleder .hellavideo img {
-    width: 100%;
+    width: 85%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
@@ -1076,16 +1089,20 @@ footer h4 {
 
 
 .fejl-side h1 {
-    margin: 2rem;
-    font-size:2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size:3rem;
     font-family: "franklin-gothic-urw", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
 .fejl-side p {
-    margin: 0.5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
 }
 
 .fejl-side a {
@@ -1100,9 +1117,142 @@ footer h4 {
 
 
 .gavekort-sektion {
-    background-image: url('../img/gavekort-billede.png');
+    background-image: url('../img/gavekort-billede.webp');
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
 }
 
 
+.gavekort-sektion h1 {
+    font-size: 5rem;
+    color: #d96704;
+    padding-top: 12rem;
+    margin-left: 200px;
+}
 
+.gavekort-sektion h2 {
+    font-size: 5rem;
+    color: #d96704;
+    margin-left: 200px;
+}
+
+.vælg-gavekort {
+    display: flex;
+    flex-direction: row;
+}
+
+.vælg-gavekort img {
+  height: 2rem;
+  margin-top: 2.3rem;
+  margin-left: 5px;
+}
+
+.vælg-gavekort img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.knap-gavekort a button {
+    font-family: 'Montserrat', sans-serif;
+    color: #d96704;
+    font-size: 1rem;
+    background: none;
+    border: #d96704 2px solid;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    margin-left: 200px;
+}
+
+.knap-gavekort a button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gavekort-tekst  {
+    margin-left: 200px;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.gavekort-tekst p {
+    color: #d9c9ba;
+}
+
+
+/* styling af about siden */
+
+/* __________________________________________________ */
+/* ____________________________________________________ */
+
+.abouthella {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  max-width: 100%;
+}
+
+.abouthella h1 {
+  font-size: 5rem;
+  margin-left: 100px;
+  margin-bottom: 2rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 20px;
+}
+
+.information section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 355px;
+}
+
+.information section figure {
+  width: 100%;
+  height: 100%;
+}
+
+.information section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.information .knap {
+  margin: 30px 0 0 0;
+}
+
+.information .knap button {
+
+}
+
+.information figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.information h2 {
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+.information p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.vismere {
+  display: none;
+}
 
