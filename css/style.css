@@ -356,16 +356,17 @@ header nav img{
   }
 
   .flip-card-back h3 {
-    font-size: 4rem;
-    margin-top: 30px;
+    text-align: center;
+    width: 80%;
+    font-size: 2.5rem;
+    margin-top: 20px;
     color: var(--beige)
   }
 
   .flip-card-back h4 {
     position: absolute;
-    letter-spacing: 10px;
     bottom: 10px;
-    font-size: 4rem;
+    font-size: 1.8rem;
     color: var(--beige);
   }
 
@@ -378,21 +379,34 @@ header nav img{
   .flip-card-back .minitekst {
     font-size: .8rem;
     font-style: italic;
-    text-align: center;
+    text-align: left;
     margin-top: -5px;
-    margin-bottom: 20px;
     margin-left: 0;
-    opacity: .5;
+    opacity: .8;
+    line-height: 1.5;
+  }
+
+  .flip-card-back .minitekst::before, .flip-card-back .minitekst::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid var(--beige);
+    width: 90%;
+    transform: translateY(-5px);
   }
 
   .flip-card-back p {
     color: var(--beige);
     text-align: left;
-    margin: 5px 0;
-    width: 300px;
-    font-size: 1rem;
-    font-weight: 100;
-    margin-left: 30px;
+    width: 70%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-left: 0;
+    padding-bottom: 2px;
+  }
+
+  .flip-card-back:nth-child(3) {
+    margin-bottom: 5px;
   }
 
   /* Tilføjer flipped for at optimerer samme effekt på telefonen ved klik i */
