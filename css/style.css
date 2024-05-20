@@ -544,6 +544,10 @@ footer {
     font-weight: 300;
 }
 
+footer a:hover {
+  font-weight: 600;
+}
+
 footer h4 {
     font-size: 25px;
     font-weight: 600;
@@ -557,7 +561,7 @@ footer h4 {
 }
 
 .footercontact p {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .footercontact a {
@@ -565,10 +569,6 @@ footer h4 {
     text-decoration: none;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
-}
-
-.footercontact a:hover, .footerfind a:hover {
-    font-weight: 400;
 }
 
 .footercontact th {
@@ -592,8 +592,8 @@ footer h4 {
     border-radius: 10px;
 }
 
-.footerfind br {
-  margin-top: 20px;
+.footerfind p {
+  line-height: 2.1;
 }
 
 .footerfind a {
@@ -1211,9 +1211,19 @@ footer h4 {
 }
 
 .information article p a {
-  font-weight: 800;
+  font-weight: 400;
   font-family: 'montserrat', sans-serif;
 }
+
+.information article p a:hover {
+  font-weight: 600;
+}
+
+.information article p .klikher {
+  font-weight: 600;
+}
+
+
 
 .information .knap {
   display: flex;
