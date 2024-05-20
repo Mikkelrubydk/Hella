@@ -921,13 +921,10 @@ footer h4 {
     line-height: 1.5;
   }
 
-  .discover .knap {
-    width: 300px;
-  }
-  
-
-  .discover .knap a button {
-    font-size: 20px;
+  .discover a {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .eventbilleder {
@@ -1279,8 +1276,9 @@ footer h4 {
 }
 
 .information article p a {
-  font-weight: 800;
-  font-family: 'montserrat', sans-serif;
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .information .knap {
