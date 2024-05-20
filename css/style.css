@@ -939,13 +939,10 @@ footer h4 {
     line-height: 1.5;
   }
 
-  .discover .knap {
-    width: 300px;
-  }
-  
-
-  .discover .knap a button {
-    font-size: 20px;
+  .discover a {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .eventbilleder {
@@ -1515,7 +1512,43 @@ flex-grow: 1;
 }
 
 .abouthella h1 {
-  margin: 100px auto 50px auto;
+  font-size: 5rem;
+  margin-left: 100px;
+  margin-bottom: 2rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 100px 20px;
+}
+
+.information section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 355px;
+}
+
+.information section figure {
+  width: 100%;
+}
+
+.information section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.information article p a {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 100px auto 50px auto;
 }
 
 .information .knap {
