@@ -1351,8 +1351,11 @@ flex-grow: 1;
         width: 100%;
     }
 
-    
 
+    .flip-card-event:hover .flip-card-inner-event {
+      transform: none;
+    }
+  
 
     .about h3 {
         width: 100%;
