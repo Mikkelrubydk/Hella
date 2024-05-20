@@ -414,11 +414,6 @@ header nav img{
   /* __________________________________________________ */
 /* ____________________________________________________ */
 
-  .flipped {
-    transform: rotateY(180deg);
-}
-
-
   .about {
     padding: 35px 100px ;
   }
@@ -1288,7 +1283,10 @@ flex-grow: 1;
       font-size: 50px;
     }
 
-
+    .flip-card:hover .flip-card-inner {
+      transform: none;
+    }
+    
     .openinghours {
         flex-direction: column;
         align-items: center;
@@ -1349,11 +1347,6 @@ flex-grow: 1;
         margin: 0;
         margin-top: 10px;
         width: 100%;
-    }
-
-
-    .flip-card-event:hover .flip-card-inner-event {
-      transform: none;
     }
   
 
@@ -1485,6 +1478,10 @@ flex-grow: 1;
   width: 100%;
   padding: 0 0 150px 0;
   gap: 150px 0;
+}
+
+.flip-card-event:hover .flip-card-inner-event {
+  transform: none;
 }
 
 .discover {
