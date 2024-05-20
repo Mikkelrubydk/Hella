@@ -320,6 +320,7 @@ header nav img{
 
   .flip-card-front img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -777,7 +778,7 @@ footer h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 100px 30px;
     padding: 0 100px 100px 100px;
 }
 
@@ -817,6 +818,7 @@ footer h4 {
 
   .flip-card-front-event img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
