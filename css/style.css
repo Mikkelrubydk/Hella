@@ -137,6 +137,10 @@ header nav img{
     font-weight: 900;
 }
 
+#active {
+  color: var(--hellaorange);
+}
+
 .forside {
     display: flex;
     width: 100%;
@@ -198,11 +202,12 @@ header nav img{
 
 
 .pilned img {
-    width: 50px;
+    width: 60px;
     position: absolute;
-    left: 48.4%;
+    left: 50%;
+    margin-left: -30px;
     transform: translate(-50%, -50%);
-    top: 90%;
+    top: 88%;
     animation: fade-in-animation 1.5s forwards, bounce 3s infinite; 
     cursor: pointer;
     
@@ -533,6 +538,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
+    text-transform: uppercase;
     gap: 50px 200px;
     padding: 100px;
     font-weight: 300;
@@ -586,6 +592,10 @@ footer h4 {
     border-radius: 10px;
 }
 
+.footerfind br {
+  margin-top: 20px;
+}
+
 .footerfind a {
     font-size: 16px;
     text-decoration: none;
@@ -629,7 +639,7 @@ footer h4 {
 
 .menunavigation.absolute {
     position: absolute;
-    bottom: 8%;
+    bottom: 9%;
   }
 
 .menunavigation h1 {
@@ -654,9 +664,17 @@ footer h4 {
     cursor: pointer;
 }
 
+.menunavigation a.active {
+  color: var(--hellaorange); /* Vælg den farve, du ønsker */
+}
+
 .menuindhold {
-    width: 70%;
+    width: 75%;
     margin-left: 25%;
+}
+
+.menuindhold article {
+  padding-bottom: 100px;
 }
 
 .menuindhold h2 {
@@ -964,11 +982,285 @@ footer h4 {
     width: 60%;
   }
 
+
+
+/* Styling af 404 side */
+/* __________________________________________________ */
+/* ____________________________________________________ */
+
+.fejl-side {
+    height: 100vh;  
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fejl-billede {
+    border-radius: 1rem;
+    width: 40rem;
+}
+
+
+.fejl-side h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size:3rem;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.fejl-side p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+}
+
+.fejl-side a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+/* styling af gavekort siden */
+/* __________________________________________________ */
+/* ____________________________________________________ */
+
+
+.gavekort-sektion {
+    background-image: url('../img/gavekort-billede.webp');
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.gavekort-sektion article {
+  padding: 100px;
+}
+
+
+.gavekort-sektion h1 {
+    font-size: 7rem;
+    color: #d96704;
+}
+
+.gavekort-sektion h2 {
+    font-size: 5rem;
+    color: #d96704;
+}
+
+.vælg-gavekort {
+    display: flex;
+    flex-direction: row;
+}
+
+.vælg-gavekort img {
+  height: 2rem;
+}
+
+.vælg-gavekort .plusminus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  margin-left: 10px;
+}
+
+.vælg-gavekort img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.knap-gavekort a button {
+    font-family: 'Montserrat', sans-serif;
+    color: #d96704;
+    font-size: 1rem;
+    background: none;
+    border: #d96704 2px solid;
+    padding: 5px 10px;
+    border-radius: 0.5rem;
+    margin-top: 20px;
+}
+
+.knap-gavekort a button {
+  padding: 10px 20px;
+}
+
+.knap-gavekort a button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.gavekort-tekst  {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.gavekort-tekst p {
+    color: #d9c9ba;
+}
+
+/* styling af billede sektion */
+/* starter med at style pilene */
+
+.pile {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 50px 0 20px 0;
+  justify-content: end;
+  align-items: end;
+  width: 80%;
+}
+
+.pile img {
+  width: 3rem;
+}
+
+
+.pil-højre {
+  transform: rotate(-180deg);
+}
+
+.pile img:hover {
+  cursor: pointer;
+}
+/* styler billede container*/ 
+
+.billede-galleri {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.billede-wrapper {
+  width: 80%;
+  overflow: hidden;
+}
+
+.billede-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 0 0 50px 0;
+  gap: 0 10px;
+}
+
+.billede-container picture {
+  flex-shrink: 0;
+  width: 300px; /* Sørg for, at billedet ikke overstiger sin container */
+  height: 400px;
+}
+
+.billede-container img {
+  object-fit: cover;
+  width: 100%; /* Sørg for, at billedet fylder sin container */
+  height: 100%; /* Tillad billedets højde at justeres i forhold til dets bredde */
+  border-radius: 20px;
+}
+
+/* styling af about siden */
+
+/* __________________________________________________ */
+/* ____________________________________________________ */
+
+.abouthella {
+
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  max-width: 100%;
+}
+
+.abouthella h1 {
+  font-size: 5rem;
+  margin-left: 100px;
+  margin-bottom: 2rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 100px 20px;
+}
+
+.information section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 355px;
+}
+
+.information section figure {
+  width: 100%;
+}
+
+.information section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.information article p a {
+  font-weight: 800;
+  font-family: 'montserrat', sans-serif;
+}
+
+.information .knap {
+  display: flex;
+  margin: 30px 0 0 0;
+  color: var(--beige);
+}
+
+.knapcontainer {
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+flex-grow: 1;
+}
+
+.information figure img {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.information h2 {
+  font-size: 3rem;
+  margin-top: 30px;
+}
+
+.information p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.vismere {
+  display: none;
+}
+
 /* Definering af breakpoints */
 /* __________________________________________________ */
 /* ____________________________________________________ */
 
 @media only screen and (max-width: 1080px) {
+
+    .burgerindhold ul li a {
+      font-size: 50px;
+    }
+
 
 
     .openinghours {
@@ -1061,7 +1353,9 @@ footer h4 {
     }
 
     footer {
-        padding: 50px;
+        margin: 50px 0 0 0;
+        padding: 0;
+        justify-content: center;
     }
 
     .follow-us h3 {
@@ -1074,247 +1368,148 @@ footer h4 {
     }
 
     .footerfind iframe {
-        width: 100%;
+      width: 100%;
     }
-    
- }
 
+    .footercontact, .footerfind, .footerfollow {
+      width: 70%;
+    }
 
-/* Styling af 404 side */
-/* __________________________________________________ */
-/* ____________________________________________________ */
+    /* BREAKPOINT STYLING AF MENUKORT.HTML */
 
-.fejl-side {
-    height: 100vh;  
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+      .menukort {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 100px 0 100px 0;
+      width: 100%;
+      margin: 0;
+    }
+
+    .menunavigation {
+      position: static;
+      width: 70%;
+      margin-bottom: 100px;
+    }
+
+    .menuindhold {
+      margin: 0;
+    }
+
+    .menuindhold h2 {
+      font-size: 2.5rem;
+    }
+
+    .menuindhold .barstuffindhold {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(2, 1fr); 
+      gap: 50px; 
 }
 
-
-.fejl-billede {
-    border-radius: 1rem;
-    width: 40rem;
+.menuindhold .seasonalindhold {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
 }
 
-
-.fejl-side h1 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size:3rem;
-    font-family: "franklin-gothic-urw", sans-serif;
-    font-weight: 900;
-    font-style: normal;
+.menuindhold .fridgeindhold {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: none;
+    margin: 100px 0;
+    gap: 50px; 
 }
 
-.fejl-side p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 1.5;
-
+.menuindhold .nonalcoholindhold {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
 }
 
-.fejl-side a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+.menuindhold .kitchenindhold {
+    margin: 100px 0;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
 }
 
+/* STYLING AF BREAKPOINTS VED EVENTS.HTML */
 
-/* styling af gavekort siden */
-/* __________________________________________________ */
-/* ____________________________________________________ */
-
-
-.gavekort-sektion {
-    background-image: url('../img/gavekort-billede.webp');
-    background-size: cover;
-    height: 100vh;
-    object-fit: cover;
-}
-
-
-.gavekort-sektion h1 {
-    font-size: 5rem;
-    color: #d96704;
-    padding-top: 12rem;
-    margin-left: 200px;
-}
-
-.gavekort-sektion h2 {
-    font-size: 5rem;
-    color: #d96704;
-    margin-left: 200px;
-}
-
-.vælg-gavekort {
-    display: flex;
-    flex-direction: row;
-}
-
-.vælg-gavekort img {
-  height: 2rem;
-  margin-top: 2.3rem;
-  margin-left: 5px;
-}
-
-.vælg-gavekort img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.knap-gavekort a button {
-    font-family: 'Montserrat', sans-serif;
-    color: #d96704;
-    font-size: 1rem;
-    background: none;
-    border: #d96704 2px solid;
-    padding: 5px 10px;
-    border-radius: 0.5rem;
-    margin-left: 200px;
-}
-
-.knap-gavekort a button:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-.gavekort-tekst  {
-    margin-left: 200px;
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
-
-.gavekort-tekst p {
-    color: #d9c9ba;
-}
-
-/* styling af billede sektion */
-/* starter med at style pilene */
-
-.pile {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-
-.pile img {
-  width: 3rem;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-
-.pil-højre {
-  transform: rotate(-180deg);
-  margin-right: 200px;
-}
-
-.pile img:hover {
-  cursor: pointer;
-}
-/* styler billede container*/ 
-
-.billede-container {
+.overskrift {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  overflow: hidden;
-  gap: 0 20px;
-  margin-bottom: 2rem;
-  width: 70%;
+  align-items: center;
+  margin-left: 0;
+  padding-bottom: 50px;
 }
 
-.billede-container img {
-  height: 20rem;
-  border-radius: 1rem;
+.flipcards-event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 0 150px 0;
+  gap: 150px 0;
 }
 
-/* styling af about siden */
-
-/* __________________________________________________ */
-/* ____________________________________________________ */
-
-.abouthella {
-
+.discover {
   display: flex;
   flex-direction: column;
-  padding: 100px;
+  align-items: center;
+  margin: 0 auto;
   max-width: 100%;
+  padding: 0;
+}
+
+.discover h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.discover p {
+  margin: 0;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.eventbilleder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  margin: 0;
+}
+
+.eventbilleder .venyl {
+  width: 90%;
+}
+
+.eventbilleder .hellavideo {
+  width: 90%;
+}
+
+.eventbilleder .venyl img {
+  height: 300px;
+  width: 100%;
+}
+
+.eventbilleder .hellavideo img {
+  height: 300px;
+  width: 100%;
+}
+
+/* STYLING AF BREAKPOINTS AF ABOUT.HTML */
+
+.abouthella {
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .abouthella h1 {
-  font-size: 5rem;
-  margin-left: 100px;
-  margin-bottom: 2rem;
-}
-
-.information {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  gap: 100px 20px;
-}
-
-.information section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 355px;
-}
-
-.information section figure {
-  width: 100%;
-}
-
-.information section article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-}
-
-.information article p a {
-  font-weight: 800;
-  font-family: 'montserrat', sans-serif;
+  margin: 100px auto 50px auto;
 }
 
 .information .knap {
-  display: flex;
-  margin: 30px 0 0 0;
+  font-size: 20px;
 }
 
-.knapcontainer {
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;
-flex-grow: 1;
-}
-
-.information figure img {
-  width: 100%;
-  height: 500px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-.information h2 {
-  font-size: 3rem;
-  margin-top: 30px;
-}
-
-.information p {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.vismere {
-  display: none;
-}
-
+ }
