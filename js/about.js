@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var buttons = document.querySelectorAll(".knap.vismereknap");
+    
+    buttons.forEach(function(button, index) {
+        button.addEventListener("click", function() {
+            showMore(`mereTekst${index + 1}`, button);
+        });
+    });
+});
+
 function showMore(mereTekstId, button) {
     var mereTekst = document.getElementById(mereTekstId);
 
