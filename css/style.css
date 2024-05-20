@@ -356,6 +356,7 @@ header nav img{
     background-color: var(--blue);
     color: white;
     transform: rotateY(180deg);
+    
   }
 
   .flip-card-back h3 {
@@ -402,7 +403,6 @@ header nav img{
   .flip-card-back p {
     color: var(--beige);
     text-align: left;
-    width: 80%;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.9;
@@ -1350,13 +1350,10 @@ flex-grow: 1;
         margin: 0;
         margin-top: 10px;
         width: 100%;
-
     }
 
-    .bar-stuff h2, .bar-stuff p {
-        width: 100%;
-        text-align: left;
-    }
+    
+
 
     .about h3 {
         width: 100%;
