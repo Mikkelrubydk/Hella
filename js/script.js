@@ -47,9 +47,14 @@ pilNed.addEventListener('click', function() {
 });
 
 document.querySelectorAll('.flip-card').forEach(function(card) {
-    card.addEventListener('click', function() {
-        card.querySelector('.flip-card-inner').classList.toggle('flipped');
-    });
+  card.addEventListener('click', function() {
+      var flipCardInner = card.querySelector('.flip-card-inner');
+      if (flipCardInner.classList.contains('flipped')) {
+          flipCardInner.classList.remove('flipped');
+      } else {
+          flipCardInner.classList.add('flipped');
+      }
+  });
 });
 
 
