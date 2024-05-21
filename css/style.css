@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border;
+    box-sizing: border-box;
     scroll-behavior: smooth;  
     text-decoration: none;
 }
@@ -137,6 +137,10 @@ header nav img{
     font-weight: 900;
 }
 
+.burgerindhold ul li a:hover {
+  color: var(--hellaorange);
+}
+
 #active {
   color: var(--hellaorange);
 }
@@ -235,7 +239,7 @@ header nav img{
 }
 
 .bar-stuff p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 100px;
     font-family: "montserrat", sans-serif;
     font-weight: 400;
@@ -251,6 +255,7 @@ header nav img{
     height: 50px;
     cursor: pointer;
     margin-left: 100px;
+    font-size: 1.5rem;
     background: var(--sorttekst);
     border-radius: 10px;
     transition: 1s;
@@ -267,7 +272,7 @@ header nav img{
     text-decoration: none;
     border: none;
     color: var(--beige);
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     cursor: pointer;
@@ -355,6 +360,7 @@ header nav img{
     background-color: var(--blue);
     color: white;
     transform: rotateY(180deg);
+    
   }
 
   .flip-card-back h3 {
@@ -401,7 +407,6 @@ header nav img{
   .flip-card-back p {
     color: var(--beige);
     text-align: left;
-    width: 80%;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.9;
@@ -412,11 +417,6 @@ header nav img{
   /* Tilføjer flipped for at optimerer samme effekt på telefonen ved klik i */
   /* __________________________________________________ */
 /* ____________________________________________________ */
-
-  .flipped {
-    transform: rotateY(180deg);
-}
-
 
   .about {
     padding: 35px 100px ;
@@ -429,7 +429,7 @@ header nav img{
 }
 
 .about p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     margin-left: 100px;
     width: 80%;
@@ -442,9 +442,7 @@ header nav img{
     align-items: center;
     justify-content: space-between;
     justify-content: space-around;
-    width: 80%;
-    margin-left: 50px;
-    margin-bottom:3rem;
+    width: 100%;
 
 }
 
@@ -483,15 +481,15 @@ header nav img{
 
 .openinghours figure img {
     position: relative;
-    width: 500px;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 10px;
     z-index: 1;
     margin-top: 100px;
 }
 
 #texture {
     z-index: -1;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: -500px;
     margin-left: 50px
 }
@@ -649,7 +647,6 @@ footer h4 {
     display: flex;
     padding: 100px;
     position: relative;
-    margin-left: 100px;
 }
 
 .menunavigation {
@@ -659,7 +656,7 @@ footer h4 {
 
 .menunavigation.absolute {
     position: absolute;
-    bottom: 9%;
+    bottom: 10%;
   }
 
 .menunavigation h1 {
@@ -708,7 +705,7 @@ footer h4 {
 }
 
 .menuindhold h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .menuindhold .tastetekst {
@@ -719,7 +716,7 @@ footer h4 {
 }
 
 .menuindhold p {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .menuindhold .beskrivelse {
@@ -789,8 +786,9 @@ footer h4 {
 
 .overskrift {
   font-size: 5rem;
-  padding: 100px 100px 2rem 100px;
-  margin-left: 100px;
+  padding: 100px 0 2rem 0;
+  width: 80%;
+  margin-left: 200px;
 }
 
 .flipcards-event {
@@ -815,7 +813,7 @@ footer h4 {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    border-radius: 20px;
+    border-radius: 10px;
   }
   
   .flip-card-event:hover .flip-card-inner-event {
@@ -956,13 +954,13 @@ footer h4 {
     margin-left: 100px;
     margin-bottom: 2rem;
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
   .discover a {
     font-family: "montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
   }
 
@@ -1000,7 +998,7 @@ footer h4 {
 
 
 .fejl-billede {
-    border-radius: 1rem;
+    border-radius: 10px;
     width: 40rem;
 }
 
@@ -1017,7 +1015,7 @@ footer h4 {
 .fejl-side p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
 
 }
@@ -1034,7 +1032,11 @@ footer h4 {
 
 
 .gavekort-sektion {
-    background-image: url('../img/gavekort-billede.webp');
+  background-image: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  ), url('../img/gavekort-billede.webp');
     background-size: cover;
     height: 100vh;
     object-fit: cover;
@@ -1080,16 +1082,14 @@ footer h4 {
 .knap-gavekort a button {
     font-family: 'Montserrat', sans-serif;
     color: #d96704;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     background: none;
     border: #d96704 2px solid;
-    padding: 5px 10px;
-    border-radius: 0.5rem;
+    border-radius: 10px;
     margin-top: 20px;
-}
-
-.knap-gavekort a button {
-  padding: 10px 20px;
+    padding: 10px 20px;
+    transition: 1s;
 }
 
 .knap-gavekort a button:hover {
@@ -1099,11 +1099,11 @@ footer h4 {
 
 .gavekort-tekst  {
     margin-top: 2rem;
-    font-size: 1.2rem;
 }
 
 .gavekort-tekst p {
-    color: #d9c9ba;
+    color: var(--beige);
+    font-size: 1.2rem;
 }
 
 /* styling af billede sektion */
@@ -1161,7 +1161,7 @@ footer h4 {
   object-fit: cover;
   width: 100%;
   height: 100%; 
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /* styling af about siden */
@@ -1185,20 +1185,26 @@ footer h4 {
 
 .information {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly
   flex-wrap: wrap;
   max-width: 100%;
   gap: 100px 20px;
+  margin-bottom: 100px;
 }
+
 
 .information section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 355px;
+  width: 400px;
 }
 
 .information section figure {
+  width: 100%;
+}
+
+.information section figure img {
   width: 100%;
 }
 
@@ -1232,7 +1238,13 @@ footer h4 {
 .information .knap {
   display: flex;
   margin: 30px 0 0 0;
+  font-size: 1.5rem;
   color: var(--beige);
+}
+
+.vismereknap {
+  width: max-content;
+  padding: 5px;
 }
 
 .knapcontainer {
@@ -1245,7 +1257,7 @@ flex-grow: 1;
 .information figure img {
   width: 100%;
   height: 500px;
-  border-radius: 20px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -1272,11 +1284,13 @@ flex-grow: 1;
 @media only screen and (max-width: 1080px) {
 
     .burgerindhold ul li a {
-      font-size: 50px;
+      font-size: 55px;
     }
 
-
-
+    .flip-card:hover .flip-card-inner {
+      transform: none;
+    }
+    
     .openinghours {
         flex-direction: column;
         align-items: center;
@@ -1287,62 +1301,58 @@ flex-grow: 1;
         flex-direction: column;
         align-items: center;
         margin-top: 100px;
+        width: 100%;
     }
 
     .openinghours figure img {
-        width: 350px;
+        max-width: 100%;
         margin: 0;
         padding: 0;
     }
 
     #texture {
         margin: 0;
-        margin-top: -330px;
+        margin-top: -300px;
         margin-left: 20px;
     
     }
 
     .burgerindhold {
-        display: flex;
+    
         justify-content: center;
         align-items: center;
         width: 100%;
-        line-height: 120px;
+        line-height: normal;
     }
 
     .burgerindhold ul {
         margin: 0;
-        justify-content: center;
         align-items: left;
+        gap: 20px 0;
     }
 
     .bar-stuff, .about, .follow-us {
-        padding: 50px;
+        width: 80%;
+        margin: 50px auto;
+        padding: 0
     }
 
     .bar-stuff h2, .about h2, .follow-us h2 {
-        font-size: 4rem;
-        text-align: center;
+        font-size: 3.5rem;
+        text-align: left;
         width: 100%;
         margin: 0;
     }
 
-    .bartekst {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
 
-    .bartekst, .about p, .follow-us p {
-        margin: 0 auto;
-        width: 100%;
-        text-align: center;
-
-    }
-
-    .bar-stuff h2, .bar-stuff p {
+    .bartekst p, .about p, .follow-us p{
+        text-align: left;
+        font-size: 1.5rem;
         margin: 0;
+        margin-top: 10px;
+        width: 100%;
     }
+  
 
     .about h3 {
         width: 100%;
@@ -1413,6 +1423,10 @@ flex-grow: 1;
       margin-bottom: 100px;
     }
 
+    .menunavigation.absolute {
+      position: static;
+    }
+
     .menuindhold {
       margin: 0;
     }
@@ -1470,6 +1484,10 @@ flex-grow: 1;
   gap: 150px 0;
 }
 
+.flip-card-event:hover .flip-card-inner-event {
+  transform: none;
+}
+
 .discover {
   display: flex;
   flex-direction: column;
@@ -1481,12 +1499,13 @@ flex-grow: 1;
 
 .discover h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 3.5rem;
+  width: 80%;
 }
 
 .discover p {
   margin: 0;
-  font-size: 15px;
+  font-size: 1.5rem;
   margin-top: 20px;
 }
 
@@ -1500,44 +1519,29 @@ flex-grow: 1;
   margin: 0;
 }
 
-.eventbilleder .venyl {
-  width: 90%;
-}
-
-.eventbilleder .hellavideo {
-  width: 90%;
-}
-
-.eventbilleder .venyl img {
-  height: 300px;
-  width: 100%;
-}
-
-.eventbilleder .hellavideo img {
-  height: 300px;
-  width: 100%;
-}
-
 .billede-container picture {
-  width: calc((100% / 2) - 10px); /* bruges til at beregne bredden af hvert billede i containeren, så der altid vises fire billeder på skærmen med en 10 pixels mellemrum mellem dem. */
+  width: calc((100% / 1) - 10px); /* bruges til at beregne bredden af hvert billede i containeren, så der altid vises fire billeder på skærmen med en 10 pixels mellemrum mellem dem. */
 }
 
 /* STYLING AF BREAKPOINTS AF ABOUT.HTML */
 
 .abouthella {
   padding: 0;
-  margin-bottom: 50px;
+  margin: 0;
 }
 
 .abouthella h1 {
   font-size: 5rem;
-  margin-left: 100px;
-  margin-bottom: 2rem;
+  margin: 100px auto 50px auto;
+  width: 80%;
+}
+
+.abouthella h2 {
+  font-size: 3rem;
 }
 
 .information {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
   gap: 100px 20px;
@@ -1546,19 +1550,23 @@ flex-grow: 1;
 .information section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 355px;
+  width: 100%;
 }
 
 .information section figure {
-  width: 100%;
+  width: 80%;
+}
+
+.information p {
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .information section article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 80%;
 }
 
@@ -1567,7 +1575,7 @@ flex-grow: 1;
 }
 
 .information .knap {
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 /* STYLING AF BREAKPOINTS AF GAVEKORT */
@@ -1575,6 +1583,11 @@ flex-grow: 1;
 .gavekort-sektion {
   display: flex;
   justify-content: center;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    ), url('../img/gavekort-billede.webp');
 }
 
 .gavekort-sektion article {
@@ -1583,7 +1596,7 @@ flex-grow: 1;
 }
 
 .gavekort-sektion h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 .vælg-gavekort #gavekort-beløb {

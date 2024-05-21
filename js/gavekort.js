@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const maxIndex = images.length - visibleImages;
         if (currentIndex < 0) {
             currentIndex = maxIndex;
-        } else if (currentIndex > maxIndex) {
+        } else if (currentIndex > maxIndex) { // Sørger for at når billed-slideren starter ved det første billede, når den når sit maxindex.
             currentIndex = 0;
         }
         const newTransform = `translateX(-${currentIndex * imageWidth}px)`;
@@ -48,12 +48,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     leftArrow.addEventListener('click', () => {
-        currentIndex -= 1;
+        currentIndex -= 1; // Rykker et billede til venstre
         updateScroll();
     });
 
     rightArrow.addEventListener('click', () => {
-        currentIndex += 1;
+        currentIndex += 1; // Rykker et billede til højre
         updateScroll();
     });
 });

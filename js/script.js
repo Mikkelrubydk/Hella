@@ -1,18 +1,22 @@
+// Tilføjelse af mørk gradient når brugeren er scrollet til top: 0
+
+document.addEventListener('scroll', () => {
+  let nav = document.querySelector(`.navbar`);
+
+  if (window.scrollY === 0) {
+    nav.classList.add(`scrolled`);
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+// Tilføjelse og fjernelse af elementer/effekter når brugermenuen er hhv. lukket og åben.
+
 const menuBtn = document.querySelector('.menu-btn');
 const burgerIndhold = document.querySelector('.burgerindhold');
 const centerLogo = document.querySelector('.centerlogo');
 const pilNed = document.querySelector('.pilned');
 let menuOpen = false;
-
-document.addEventListener('scroll', () => {
-    let nav = document.querySelector(`.navbar`);
-  
-    if (window.scrollY === 0) {
-      nav.classList.add(`scrolled`);
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
 
 
 menuBtn.addEventListener('click', () => {
@@ -39,6 +43,8 @@ menuBtn.addEventListener('click', () => {
     }
   });
 
+  // Scoller den samme afstand svarende til højden af browserens viewport
+
 pilNed.addEventListener('click', function() {
   window.scrollTo({
     top: window.innerHeight,
@@ -46,11 +52,22 @@ pilNed.addEventListener('click', function() {
   });
 });
 
-document.querySelectorAll('.flip-card').forEach(function(card) {
-    card.addEventListener('click', function() {
-        card.querySelector('.flip-card-inner').classList.toggle('flipped');
-    });
-});
+// If-statement som sørger for at koden kun kører når brugeren er på mobilen. Tilføjelse af klik-effekt, hvorimod effekten forekommer ved hover på computeren.
+
+if (window.matchMedia('(max-width: 1080px)').matches) {
+  // Sørger for at koden kun kører, når brugeren er på mobilen
+  document.querySelectorAll('.flip-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+          var flipCardInner = card.querySelector('.flip-card-inner');
+          if (flipCardInner.style.transform === 'rotateY(180deg)') {
+              flipCardInner.style.transform = 'rotateY(0deg)';
+          } else {
+              flipCardInner.style.transform = 'rotateY(180deg)';
+          }
+      });
+  });
+}
+
 
 
 
