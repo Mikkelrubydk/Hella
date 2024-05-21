@@ -1163,9 +1163,9 @@ footer h4, footer .ohoverskrift {
 }
 
 .knap-gavekort {
-    width: 200px;
     transition: 1s;
     margin-top: 20px;
+    width: fit-content;
 }
 
 .knap-gavekort a {
@@ -1628,6 +1628,8 @@ flex-grow: 1;
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0)
     ), url('../img/gavekort-billede.webp');
+
+  background-position: 25%;
 }
 
 .gavekort-sektion article {
