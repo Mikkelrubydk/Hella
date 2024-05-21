@@ -789,11 +789,11 @@ footer h4, footer .ohoverskrift {
 }
 
 .menuindhold h3 {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .menuindhold .tastetekst {
-    font-size: 0.8rem;
+    font-size: 1rem;
     opacity: 0.5;
     font-style: italic;
     padding: 10px 0;
