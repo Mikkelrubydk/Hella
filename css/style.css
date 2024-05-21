@@ -251,6 +251,10 @@ header nav img{
     width: 80%;
 }
 
+.bartekst p, .about p {
+  padding: 10px 0;
+}
+
 .knap {
   display: flex;
   align-items: center;
@@ -534,12 +538,15 @@ header nav img{
     filter: brightness(50%);
     transition: .5s;
 }
+.follow-us a {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .follow-us h3 {
-    text-align: right;
-    margin-right: 105px;
     margin-top: 20px;
     font-size: 30px;
+    margin-right: 100px;
     font-weight: 500;
     color: var(--blue);
 }
