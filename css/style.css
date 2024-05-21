@@ -346,8 +346,8 @@ header nav img{
 
   .flip-card-front h3 {
     position: absolute;
-    bottom: 0;
-    font-size: 50px;
+    bottom: 20px;
+    font-size: 40px;
     font-weight: 900;
     z-index: 2;
     color: var(--blue);
@@ -357,11 +357,12 @@ header nav img{
     position: absolute;
     bottom: 0;
     z-index: 1;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
     height: 100px;
     width: 100%;
-  }
+}
+
   
   .flip-card-back {
     background-color: var(--blue);
