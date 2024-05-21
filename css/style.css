@@ -1106,29 +1106,31 @@ footer h4, footer .ohoverskrift {
 }
 
 .knap-gavekort a {
-  color: #d96704;
-  font-family: 'Montserrat', sans-serif;    
-  font-weight: 600;
-  background: none;
-  border: #d96704 2px solid;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #d96704;
+    font-size: 1rem;
+    font-weight: 600;
+    background: none;
+    border: #d96704 1px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 1s;
 }
 
 .knap-gavekort:hover {
     transform: scale(1.05);
     cursor: pointer;
+
 }
 
 
 .gavekort-tekst  {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .gavekort-tekst p {
     color: var(--beige);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* styling af billede sektion */
