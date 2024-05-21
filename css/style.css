@@ -255,7 +255,8 @@ header nav img{
     height: 50px;
     cursor: pointer;
     margin-left: 100px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 1rem;
     background: var(--sorttekst);
     border-radius: 10px;
     transition: 1s;
@@ -1238,7 +1239,6 @@ footer h4 {
 .information .knap {
   display: flex;
   margin: 30px 0 0 0;
-  font-size: 1.5rem;
   color: var(--beige);
 }
 
