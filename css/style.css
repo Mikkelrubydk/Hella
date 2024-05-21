@@ -1162,7 +1162,9 @@ footer h4, footer .ohoverskrift {
 }
 
 .knap-gavekort {
-  margin-top: 20px;
+    width: 200px;
+    transition: 1s;
+    margin-top: 20px;
 }
 
 .knap-gavekort a {
@@ -1177,7 +1179,7 @@ footer h4, footer .ohoverskrift {
     transition: 1s;
 }
 
-.knap-gavekort a:hover {
+.knap-gavekort:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
