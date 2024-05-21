@@ -230,7 +230,7 @@ header nav img{
   }
 
 .bar-stuff {
-    padding: 100px 100px 0 100px;
+    padding: 50px 100px 0 100px;
   }
 
 .bar-stuff, .about, .follow-us {
@@ -1192,6 +1192,10 @@ footer h4, footer .ohoverskrift {
 .gavekort-tekst p {
     color: var(--beige);
     font-size: 1rem;
+}
+
+.footerstreg-gavekort {
+    margin-top: 50px;
 }
 
 
