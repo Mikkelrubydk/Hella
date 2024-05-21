@@ -249,6 +249,7 @@ header nav img{
     font-weight: 400;
     font-style: normal;
     width: 80%;
+    
 }
 
 .knap {
@@ -1371,7 +1372,7 @@ flex-grow: 1;
         margin-top: 10px;
         width: 100%;
     }
-  
+
 
     .about h3 {
         width: 100%;
