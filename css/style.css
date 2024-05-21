@@ -432,7 +432,9 @@ header nav img{
 /* ____________________________________________________ */
 
   .about {
-    padding: 35px 100px ;
+    padding:50px 100px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
 .about h2 {
@@ -448,6 +450,63 @@ header nav img{
     width: 80%;
 }
 
+/* styling af billede sektion */
+/* starter med at style pilene */
+
+.pile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 0 20px 0;
+    justify-content: end;
+    align-items: end;
+    width: 75%;
+  }
+  
+  .pile img {
+    width: 3rem;
+  }
+  
+  
+  .pil-højre {
+    transform: rotate(-180deg);
+  }
+  
+  .pile img:hover {
+    cursor: pointer;
+  }
+  /* styler billede container*/ 
+  
+  .billede-galleri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .billede-wrapper {
+    width: 75%;
+    overflow: hidden;
+  }
+  
+  .billede-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0 0 50px 0;
+    gap: 0 10px;
+  }
+  
+  .billede-container picture {
+    flex-shrink: 0; 
+    width: calc((100% / 4) - 10px); /* bruges til at beregne bredden af hvert billede i containeren, så der altid vises fire billeder på skærmen med en 10 pixels mellemrum mellem dem. */
+  }
+  
+  .billede-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; 
+    border-radius: 10px;}
+
 .openinghours {
     display: flex;
     flex-wrap: wrap;
@@ -455,6 +514,9 @@ header nav img{
     width: 100%;
     gap: 50px;
     margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 
 }
 
@@ -511,7 +573,7 @@ header nav img{
 }
 
 .follow-us {
-    padding: 0 100px 100px 100px;
+    padding: 50px 100px 0px 100px;
 }
 
 .follow-us h2 {
@@ -1118,7 +1180,6 @@ footer h4, footer .ohoverskrift {
 .knap-gavekort a:hover {
     transform: scale(1.05);
     cursor: pointer;
-
 }
 
 
@@ -1131,63 +1192,7 @@ footer h4, footer .ohoverskrift {
     font-size: 1rem;
 }
 
-/* styling af billede sektion */
-/* starter med at style pilene */
 
-.pile {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  padding: 50px 0 20px 0;
-  justify-content: end;
-  align-items: end;
-  width: 75%;
-}
-
-.pile img {
-  width: 3rem;
-}
-
-
-.pil-højre {
-  transform: rotate(-180deg);
-}
-
-.pile img:hover {
-  cursor: pointer;
-}
-/* styler billede container*/ 
-
-.billede-galleri {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
-
-.billede-wrapper {
-  width: 75%;
-  overflow: hidden;
-}
-
-.billede-container {
-  display: flex;
-  transition: transform 0.5s ease;
-  padding: 0 0 50px 0;
-  gap: 0 10px;
-}
-
-.billede-container picture {
-  flex-shrink: 0; 
-  width: calc((100% / 4) - 10px); /* bruges til at beregne bredden af hvert billede i containeren, så der altid vises fire billeder på skærmen med en 10 pixels mellemrum mellem dem. */
-}
-
-.billede-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%; 
-  border-radius: 10px;
-}
 
 /* styling af about siden */
 
