@@ -264,8 +264,8 @@ header nav img{
     margin-left: 100px;
     background: var(--sorttekst);
     border-radius: 10px;
-    width: 150px;
     height: 50px;
+    width: max-content;
     transition: 1s;
     margin-top: 20px;
     text-decoration: none;
@@ -280,6 +280,7 @@ header nav img{
 .knap a {
   color: var(--beige);
   font-size: 1rem;
+  padding: 0 10px;
   font-family: 'montserrat', sans-serif;
   font-weight: 400;
   cursor: pointer;
