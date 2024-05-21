@@ -248,27 +248,17 @@ header nav img{
 }
 
 .knap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
     cursor: pointer;
     margin-left: 100px;
-    font-size: 1.5rem;
     background: var(--sorttekst);
     border-radius: 10px;
+    width: 150px;
+    height: 50px;
     transition: 1s;
     margin-top: 20px;
-}
-
-
-.knap:hover {
-    transform: scale(1.05);
-}
-
-.knap button {
-    background-color: transparent;
     text-decoration: none;
     border: none;
     color: var(--beige);
@@ -277,6 +267,20 @@ header nav img{
     font-weight: 400;
     cursor: pointer;
 }
+
+.knap a {
+  color: var(--beige);
+  font-size: 1rem;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+
+.knap:hover {
+    transform: scale(1.05);
+}
+
 
 /* styling af flipcards */
 /* __________________________________________________ */
@@ -438,18 +442,19 @@ header nav img{
 .openinghours {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    justify-content: space-around;
     width: 100%;
+    gap: 50px;
+    margin-top: 50px;
 
 }
 
-.openinghours h3{
+.openinghours .ohoverskrift{
     font-size: 3rem;
     margin-top: 100px;
     margin-bottom: 20px;
+    font-weight: 900;
+    font-family: "franklin-gothic-urw", sans-serif;
 }
 
 .openinghours table {
@@ -462,13 +467,13 @@ header nav img{
 }
 
 .openinghours th {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: left;
     font-weight: 300;
 }
 
 .openinghours td {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-align: right;
     padding: 10px 0;
@@ -476,22 +481,24 @@ header nav img{
 }
 
 .openinghours figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     width: 40%;
 }
 
 .openinghours figure img {
     position: relative;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     z-index: 1;
-    margin-top: 100px;
 }
 
 #texture {
     z-index: -1;
     border-radius: 10px;
-    margin-top: -500px;
-    margin-left: 50px
+    margin-top: -87%;
+    margin-left: 3%
 }
 
 .follow-us {
@@ -566,10 +573,12 @@ footer a:hover {
   font-weight: 500;
 }
 
-footer h4 {
+footer h4, footer .ohoverskrift {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 600 !important;
     margin-bottom: 20px;
+    font-family: "franklin-gothic-urw", sans-serif;
+    
 }
 
 .footercontact {
@@ -1079,7 +1088,11 @@ footer h4 {
     cursor: pointer;
 }
 
-.knap-gavekort a button {
+.knap-gavekort {
+  margin-top: 20px;
+}
+
+.knap-gavekort a {
     font-family: 'Montserrat', sans-serif;
     color: #d96704;
     font-size: 1.5rem;
@@ -1087,15 +1100,15 @@ footer h4 {
     background: none;
     border: #d96704 2px solid;
     border-radius: 10px;
-    margin-top: 20px;
     padding: 10px 20px;
     transition: 1s;
 }
 
-.knap-gavekort a button:hover {
+.knap-gavekort a:hover {
     transform: scale(1.05);
     cursor: pointer;
 }
+
 
 .gavekort-tekst  {
     margin-top: 2rem;
@@ -1185,7 +1198,7 @@ footer h4 {
 
 .information {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
   flex-wrap: wrap;
   max-width: 100%;
   gap: 100px 20px;
@@ -1238,7 +1251,8 @@ footer h4 {
 .information .knap {
   display: flex;
   margin: 30px 0 0 0;
-  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
   color: var(--beige);
 }
 
@@ -1294,13 +1308,14 @@ flex-grow: 1;
     .openinghours {
         flex-direction: column;
         align-items: center;
+        gap: 0;
     }
 
     .openinghours figure {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 50px;
         width: 100%;
     }
 
@@ -1312,8 +1327,8 @@ flex-grow: 1;
 
     #texture {
         margin: 0;
-        margin-top: -300px;
-        margin-left: 20px;
+        margin-top: -87%;
+        margin-left: 5%;
     
     }
 
@@ -1366,7 +1381,7 @@ flex-grow: 1;
         height: 75px;
     }
 
-    .knap a button {
+    .knap a {
         font-size: 30px;
     }
 
