@@ -511,13 +511,9 @@ header nav img{
 .openinghours {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    gap: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 100px;
 
 }
 
@@ -530,20 +526,19 @@ header nav img{
     font-family: "franklin-gothic-urw", sans-serif;
 }
 
-.openinghours thead {
-  display: flex;
-  justify-content: flex-start;
+.openinghours table {
+    margin-left: 100px;
 }
 
-.openinghours table {
-    width: 50%;
-    margin-left: 100px;
+.tbody {
+  width: 50%;
 }
 
 .openinghours th {
     font-size: 1.2rem;
     text-align: left;
     font-weight: 300;
+    padding-right: 200px;
 }
 
 .openinghours td {
@@ -558,7 +553,7 @@ header nav img{
   display: flex;
   flex-direction: column;
   justify-content: center;
-    width: 40%;
+  width: 40%;
 }
 
 .openinghours figure img {
@@ -768,7 +763,7 @@ footer h4, footer .ohoverskrift {
 }
 
 .menunavigation a.active {
-  color: var(--hellaorange); /* Vælg den farve, du ønsker */
+  color: var(--hellaorange);
 }
 
 .menuindhold {
