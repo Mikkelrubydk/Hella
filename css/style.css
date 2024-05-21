@@ -1181,7 +1181,7 @@ footer h4 {
 
 .information {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly
   flex-wrap: wrap;
   max-width: 100%;
   gap: 100px 20px;
