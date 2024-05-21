@@ -1404,12 +1404,10 @@ flex-grow: 1;
         margin: 20px auto;
         display: flex;
         justify-content: center;
-        width: 250px;
-        height: 75px;
     }
 
     .knap a {
-        font-size: 30px;
+        font-size: 1rem;
     }
 
     .about table {
