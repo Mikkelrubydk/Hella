@@ -264,8 +264,8 @@ header nav img{
     margin-left: 100px;
     background: var(--sorttekst);
     border-radius: 10px;
-    width: 150px;
     height: 50px;
+    width: max-content;
     transition: 1s;
     margin-top: 20px;
     text-decoration: none;
@@ -280,6 +280,7 @@ header nav img{
 .knap a {
   color: var(--beige);
   font-size: 1rem;
+  padding: 0 10px;
   font-family: 'montserrat', sans-serif;
   font-weight: 400;
   cursor: pointer;
@@ -1334,6 +1335,7 @@ flex-grow: 1;
         flex-direction: column;
         align-items: center;
         gap: 0;
+        padding: 0;
     }
 
     .openinghours figure {
@@ -1402,12 +1404,10 @@ flex-grow: 1;
         margin: 20px auto;
         display: flex;
         justify-content: center;
-        width: 250px;
-        height: 75px;
     }
 
     .knap a {
-        font-size: 30px;
+        font-size: 1rem;
     }
 
     .about table {
