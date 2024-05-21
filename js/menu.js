@@ -1,4 +1,5 @@
 
+  // .Menunavigationen forbliver "fixed", indtil at den overskrider 65% af højden af dokumentet, hvorefter den bliver absolute.
   window.addEventListener('scroll', function() {
     var menuNavigation = document.querySelector('.menunavigation');
     var heightPercentage = 65; // dokument højde i procent
@@ -13,39 +14,49 @@
     }
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuLinks = document.querySelectorAll('.menunavigation a');
-    const sections = document.querySelectorAll('.menuindhold h2');
+// Observer som observerer hvor på siden man befinder sig, og highlighter listeelementer derefter.
 
-    // Juster rootMargin for at tilpasse, hvornår sektioner betragtes som synlige
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -50% 0px', // Juster denne margin efter behov
-        threshold: 0.5 // Juster threshold som ønsket
-    };
+document.addEventListener('DOMContentLoaded', function() {
 
-    // Debounce-variabel
-    let activeSection = null;
+  const menuLinks = document.querySelectorAll('.menunavigation a');
+  const sections = document.querySelectorAll('.menuindhold h2');
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Debounce for at undgå hurtige skift
-                if (activeSection !== entry.target) {
-                    activeSection = entry.target;
-                    menuLinks.forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href').includes(entry.target.id)) {
-                            link.classList.add('active');
-                        }
-                    });
-                }
-            }
-        });
-    }, observerOptions);
+  const observerOptions = {
+      root: null, // Brug hele viewport som roden for observationen
+      rootMargin: '0px 0px -50% 0px',
+      threshold: 0.5
+  };
 
-    sections.forEach(section => {
-        observer.observe(section);
-    });
+  // Initialiser variabel til den aktive sektion
+  let activeSection = null;
+
+  // Opret en ny IntersectionObserver med den givne callback-funktion og indstillingerne
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          // Tjekker om sektionen er synlig
+          if (entry.isIntersecting) {
+              // Hvis sektionen er synlig og ikke allerede er markeret som aktiv
+              if (activeSection !== entry.target) {
+                  // Opdater aktiv sektion til den synlige sektion
+                  activeSection = entry.target;
+                  // Opdater menu-links for at markere den aktive sektion
+                  menuLinks.forEach(link => {
+                      link.classList.remove('active'); // Fjern 'active' klasse fra alle menu-links
+                      // Hvis linkets href-attribut indeholder id'et på den aktuelle sektion
+                      if (link.getAttribute('href').includes(entry.target.id)) {
+                          // Tilføj 'active' klasse til dette link
+                          link.classList.add('active');
+                      }
+                  });
+              }
+          }
+      });
+  }, observerOptions);
+
+  // Observer hver sektion for synlighed
+  sections.forEach(section => {
+      observer.observe(section);
+  });
 });
+
 

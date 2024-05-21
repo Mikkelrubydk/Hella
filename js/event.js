@@ -1,3 +1,4 @@
+
 if (window.matchMedia('(max-width: 1080px)').matches) {
     // Sørger for at koden kun kører, når brugeren er på mobilen
     document.querySelectorAll('.flip-card-event').forEach(function(card) {
@@ -11,6 +12,8 @@ if (window.matchMedia('(max-width: 1080px)').matches) {
         });
     });
   }
+
+    // Genbrugt kode fra gavekort.html. Image-slider forbundet med to pile.  
 
 document.addEventListener('DOMContentLoaded', () => {
     const leftArrow = document.querySelector('.pil-venstre');
