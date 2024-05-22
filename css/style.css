@@ -1356,16 +1356,11 @@ flex-grow: 1;
   font-size: 2rem;
 }
 
-.openinghours {
-  flex-direction: column;
-  align-items: baseline;
-  gap: 0;
-  padding: 50px;
-}
 
-.openinghours table {
-  margin: 0;
-  margin-left: 100px;
+
+.events-forside {
+    display: flex;
+    flex-direction: column;
 }
 
 .openinghours figure {
@@ -1487,6 +1482,11 @@ flex-grow: 1;
 
     .about table {
         width: 100%;
+    }
+
+    .events-forside {
+        display: flex;
+        flex-direction: column;
     }
 
     .follow-us figure img {
