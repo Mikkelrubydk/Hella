@@ -469,6 +469,11 @@ header nav img{
     width: 2rem;
   }
   
+  
+  .pil-højre {
+    transform: rotate(-180deg);
+  }
+  
   .pile img:hover {
     cursor: pointer;
   }
@@ -505,56 +510,57 @@ header nav img{
     height: 100%; 
     border-radius: 10px;}
 
-.openinghours {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 100px;
 
+/* styler event-forside sektionen */
+
+.events-forside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 0;
+   
+   
 }
 
-.openinghours .ohoverskrift{
-    font-size: 3.5rem;
-    margin-top: 100px;
+
+.events-forside h2 {
+    font-size: 5rem;
     margin-bottom: 20px;
     padding: 0;
     font-weight: 900;
     font-family: "franklin-gothic-urw", sans-serif;
 }
 
-.openinghours table {
-    margin-left: 100px;
+.events-teaser p {
+   width: 20rem;
+   line-height: 1.5;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
 }
 
-.tbody {
-  width: 50%;
+.event-knap {
+    margin-left: 0;
+    margin-top: 2rem;
 }
 
-.openinghours th {
-    font-size: 1.2rem;
-    text-align: left;
-    font-weight: 300;
+
+.video-forside {
+    margin-top: -2rem;
+    margin-left: 10rem;
 }
 
-.openinghours td {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: right;
-    padding: 10px 0;
-    font-weight: 300;
-}
-
-.openinghours figure {
+.events-forside figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 70%;
 }
 
-.openinghours figure img {
+.events-forside figure img {
     position: relative;
-    width: 90%;
+    width: 115%;
     border-radius: 10px;
     z-index: 1;
 }
@@ -562,8 +568,9 @@ header nav img{
 #texture {
     z-index: -1;
     border-radius: 10px;
-    margin-top: -87%;
-    margin-left: 3%
+    margin-top: -100%;
+    margin-left: 30%;
+    
 }
 
 
@@ -1166,6 +1173,7 @@ footer h4, footer .ohoverskrift {
   font-size: 5rem;
   margin-left: 100px;
   margin-bottom: 2rem;
+  margin-top: -2rem;
 }
 
 .information {
@@ -1267,13 +1275,13 @@ flex-grow: 1;
 
 
 .follow-us {
-    padding: 50px 100px 0px 100px;
+    padding: 0 100px 0px 100px;
 }
 
 .follow-us h2 {
     font-size: 5rem;
     width: 80%;
-    margin-left: 100px;
+    
 }
 
 .follow-us figure {
@@ -1303,10 +1311,9 @@ flex-grow: 1;
 
 .follow-us h3 {
     margin-top: 20px;
-    font-size: 30px;
-    margin-right: 100px;
+    font-size: 1.2rem;
     font-weight: 500;
-    color: var(--blue);
+    font-family: "montserrat", sans-serif;
 }
 
 
