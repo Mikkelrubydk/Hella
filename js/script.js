@@ -1,14 +1,17 @@
 // Tilføjelse af mørk gradient når brugeren er scrollet til top: 0
 
-document.addEventListener('scroll', () => {
-  let nav = document.querySelector(`.navbar`);
+document.addEventListener('scroll', handleScroll);
+document.addEventListener('DOMContentLoaded', handleScroll);
+
+function handleScroll() {
+  let nav = document.querySelector('.navbar');
 
   if (window.scrollY === 0) {
-    nav.classList.add(`scrolled`);
+    nav.classList.add('scrolled');
   } else {
     nav.classList.remove('scrolled');
   }
-});
+}
 
 // Tilføjelse og fjernelse af elementer/effekter når brugermenuen er hhv. lukket og åben.
 
