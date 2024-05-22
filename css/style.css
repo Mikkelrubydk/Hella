@@ -20,6 +20,7 @@ body {
     background-color: var(--beige);
 }
 
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -503,7 +504,8 @@ header nav img{
     object-fit: cover;
     width: 100%;
     height: 100%; 
-    border-radius: 10px;}
+    border-radius: 10px;
+  }
 
 .openinghours {
     display: flex;
@@ -869,6 +871,7 @@ footer h4, footer .ohoverskrift {
     background-color: #bbb;
     overflow: hidden;
   }
+
 
   .flip-card-front-event h3 {
     position: absolute;
