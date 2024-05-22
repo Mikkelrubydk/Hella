@@ -1323,9 +1323,10 @@ flex-grow: 1;
 
 .follow-us h3 {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    font-family: "montserrat", sans-serif;
+    color: var(--blue);
+    font-family: "franklin-gothic-urw", sans-serif;
 }
 
 
@@ -1342,6 +1343,7 @@ flex-grow: 1;
 /* ____________________________________________________ */
 
 @media only screen and (max-width: 1024px) {
+
   .flipcards {
     display: flex;
     flex-wrap: nowrap;
