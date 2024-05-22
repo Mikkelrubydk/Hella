@@ -1287,7 +1287,6 @@ flex-grow: 1;
 .follow-us h2 {
     font-size: 5rem;
     width: 80%;
-    margin-left: 100px;
 }
 
 .follow-us figure {
@@ -1299,8 +1298,8 @@ flex-grow: 1;
 }
   
 .follow-us figure img {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     border-radius: 10px;
     transition: .5s;
