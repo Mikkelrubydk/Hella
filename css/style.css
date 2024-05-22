@@ -469,11 +469,6 @@ header nav img{
     width: 2rem;
   }
   
-  
-  .pil-højre {
-    transform: rotate(-180deg);
-  }
-  
   .pile img:hover {
     cursor: pointer;
   }
