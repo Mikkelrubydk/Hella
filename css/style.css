@@ -978,14 +978,13 @@ footer h4, footer .ohoverskrift {
     font-size: 5rem;
     margin-left: 100px;
     margin-bottom: 20px;
-    margin-top: -3rem;
   }
 
   .discover p {
     margin-left: 100px;
     width: 70%;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 1.5;
   }
 
