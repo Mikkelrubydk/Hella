@@ -471,10 +471,6 @@ header nav img{
   }
   
   
-  .pil-højre {
-    transform: rotate(-180deg);
-  }
-  
   .pile img:hover {
     cursor: pointer;
   }
@@ -533,8 +529,9 @@ header nav img{
 }
 
 .events-teaser p {
-   width: 20rem;
+   width: 100%;
    line-height: 1.5;
+   font-size: 1.2rem;
    margin-top: 1rem;
    margin-bottom: 1rem;
 
@@ -721,7 +718,7 @@ footer h4, footer .ohoverskrift {
 
 .menuindhold {
     width: 75%;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .menuindhold article {
@@ -743,7 +740,7 @@ footer h4, footer .ohoverskrift {
 }
 
 .menuindhold .tastetekst {
-    font-size: 1rem;
+    font-size: 1.2rem;
     opacity: 0.5;
     font-style: italic;
     padding: 10px 0;
@@ -975,6 +972,7 @@ footer h4, footer .ohoverskrift {
 
   .flip-card-event a h3:hover {
     color: var(--hellaorange);
+    cursor: pointer;
   }
 
 
@@ -992,18 +990,28 @@ footer h4, footer .ohoverskrift {
   .discover p {
     margin-left: 100px;
     width: 70%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.5;
   }
 
-.eventbooking {
+  .eventbooking {
+    padding: 0 100px;
+  }
+
+.eventbooking p {
   margin-left: 100px;
   width: 70%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 3.5rem;
-  margin-left: 200px;
+  margin-left: 100px;
+  margin-top: 20px;
   line-height: 1.5;
+}
+
+.eventbooking h2 {
+  font-size: 5rem;
+  margin-left: 100px;
 }
 
   .eventbooking a {
@@ -1054,7 +1062,7 @@ footer h4, footer .ohoverskrift {
 .fejl-side h1 {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size:3rem;
+    font-size: 3rem;
     font-family: "franklin-gothic-urw", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -1158,7 +1166,7 @@ footer h4, footer .ohoverskrift {
 
 .gavekort-tekst p {
     color: var(--beige);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .footerstreg-gavekort {
@@ -1280,7 +1288,7 @@ flex-grow: 1;
 .information p {
   margin-top: 30px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -1373,18 +1381,57 @@ grid-template-columns: repeat(2, 1fr);
 
 .events-forside {
   padding: 50px 100px;
+  margin: 0;
   justify-content: flex-start;
+  gap: 20px;
 }
 
 .events-teaser {
   width: 50%;
 }
 
+.events-teaser p {
+  padding: 10px 0;
+  width: 90%;
+}
+
 .video-forside {
   width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.video-forside figure {
+  width: 100%;
+}
+
+.video-forside #texture {
+  margin-left: 5%;
 }
 
 .video-forside img {
+  width: 80%;
+}
+
+.menukort {
+  padding: 100px 50px;
+}
+
+.menuindhold {
+  margin-left: 300px;
+}
+
+.discover h1, .discover p {
+  margin-left: 0;
+  width: 100%;
+}
+
+.eventbooking {
+  padding: 50px 100px 50px 100px;
+}
+
+.eventbooking p, .eventbooking h2 {
+  margin: 0;
   width: 100%;
 }
 }
@@ -1410,28 +1457,39 @@ grid-template-columns: repeat(2, 1fr);
       margin-top: 100px;
   }  
     
-    
+
+    .video-forside {
+      width: 100%;
+    }
+
+    .video-forside img {
+      max-width: 100%;
+    }
+
+    .events-teaser {
+      width: 100%;
+    }
 
     .events-forside {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
-        width: 100%;
+        width: 80%;
+        gap: 50px;
+        margin: 0 auto;
     }
 
     .events-forside figure img {
-        margin-right: 10rem;
-        width: 200%;
+        width: 150%;
 
-       
     }
 
-
     #texture {
-        margin: 0;
-        margin-top: -190%;
-        margin-right: 5rem;
+      z-index: -1;
+    border-radius: 10px;
+    margin-top: -95%;
+ 
     
     }
 
@@ -1452,7 +1510,7 @@ grid-template-columns: repeat(2, 1fr);
     .bar-stuff, .about, .follow-us, .events-forside {
         width: 80%;
         margin: 50px auto;
-        padding: 0
+        padding: 0;
     }
 
     .bar-stuff h2, .about h2, .follow-us h2, .events-forside h2 {
@@ -1491,10 +1549,6 @@ grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
 
-    .events-forside {
-        display: flex;
-        flex-direction: column;
-    }
 
     .follow-us figure img {
         width: 350px;
@@ -1540,8 +1594,11 @@ grid-template-columns: repeat(2, 1fr);
       align-items: center;
       flex-direction: column;
       padding: 100px 0 100px 0;
-      width: 100%;
       margin: 0;
+    }
+
+    .beskrivelse {
+      max-width: 100%;
     }
 
     .menunavigation {
@@ -1556,6 +1613,8 @@ grid-template-columns: repeat(2, 1fr);
 
     .menuindhold {
       margin: 0;
+      padding: 50px;
+      width: 100%;
     }
 
     .menuindhold h2 {
@@ -1619,21 +1678,43 @@ grid-template-columns: repeat(2, 1fr);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   padding: 0;
+  margin: 0;
 }
 
-.discover h2 {
+.discover h1 {
   margin: 0;
+  margin-top: 100px;
   font-size: 3.5rem;
   width: 80%;
+
 }
 
 .discover p {
   margin: 0;
+  width: 80%;
   font-size: 1.5rem;
   margin-top: 20px;
+}
+
+.eventbooking {
+  padding: 0;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.eventbooking h2 {
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 3.5rem;
+  width: 80%;
+}
+
+.eventbooking p {
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .eventbilleder {
