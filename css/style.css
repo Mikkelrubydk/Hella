@@ -984,7 +984,7 @@ footer h4, footer .ohoverskrift {
   .discover h1 {
     font-size: 5rem;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
   }
 
   .discover p {
@@ -1027,9 +1027,11 @@ footer h4, footer .ohoverskrift {
     width: 80%;
     margin-left: 100px;
     margin-right: 100px;
-    
     gap: 10px;
-    
+  }
+
+  .event-galleri{
+    margin-top: 3rem;
   }
 
 .event-galleri .billede-wrapper {
