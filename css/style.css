@@ -571,57 +571,6 @@ header nav img{
     margin-left: 3%
 }
 
-.follow-us {
-    padding: 50px 100px 0px 100px;
-}
-
-.follow-us h2 {
-    font-size: 5rem;
-    width: 80%;
-    margin-left: 100px;
-}
-
-.follow-us figure {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 50px;
-}
-  
-.follow-us figure img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: .5s;
-}
-
-.follow-us figure img:hover {
-    filter: brightness(50%);
-    transition: .5s;
-}
-.follow-us a {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.follow-us h3 {
-    margin-top: 20px;
-    font-size: 30px;
-    margin-right: 100px;
-    font-weight: 500;
-    color: var(--blue);
-}
-
-
-.follow-us a {
-    text-decoration: none;
-}
-
-.follow-us h3:hover {
-  font-weight: 600;
-}
 
 .footerstreg {
     width: 80%;
@@ -868,7 +817,7 @@ footer h4, footer .ohoverskrift {
 
 .overskrift {
   font-size: 5rem;
-  padding: 100px 0 2rem 0;
+  padding: 0 0 2rem 0;
   width: 80%;
   margin-left: 200px;
 }
@@ -878,7 +827,7 @@ footer h4, footer .ohoverskrift {
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px 30px;
-    padding: 0 100px 100px 100px;
+    padding: 0 100px 200px 100px;
 }
 
 .flip-card-event {
@@ -1029,13 +978,14 @@ footer h4, footer .ohoverskrift {
     font-size: 5rem;
     margin-left: 100px;
     margin-bottom: 10px;
+    margin-top: -3rem;
   }
 
   .discover p {
     margin-left: 100px;
-    margin-bottom: 2rem;
-    width: 80%;
-    font-size: 1.2rem;
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
   }
 
@@ -1048,11 +998,11 @@ footer h4, footer .ohoverskrift {
   .eventbilleder {
     display: flex;
     justify-content: center;
-    padding: 0 100px 100px 100px;
     height: 50vh;
     width: 80%;
     margin-left: 100px;
     margin-right: 100px;
+    
     gap: 10px;
     
   }
@@ -1318,6 +1268,59 @@ flex-grow: 1;
 
 .vismere {
   display: none;
+}
+
+
+.follow-us {
+    padding: 50px 100px 0px 100px;
+}
+
+.follow-us h2 {
+    font-size: 5rem;
+    width: 80%;
+    margin-left: 100px;
+}
+
+.follow-us figure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 50px;
+}
+  
+.follow-us figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.follow-us figure img:hover {
+    filter: brightness(50%);
+    transition: .5s;
+}
+.follow-us a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.follow-us h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 100px;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+
+.follow-us a {
+    text-decoration: none;
+}
+
+.follow-us h3:hover {
+  font-weight: 600;
 }
 
 /* Definering af breakpoints */
