@@ -1356,14 +1356,15 @@ flex-grow: 1;
   font-size: 2rem;
 }
 
-
-
 .events-forside {
-    display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 0;
+  padding: 50px;
 }
 
-.openinghours figure {
+
+.events-forside figure {
   align-items: center;
   margin-top: 50px;
   width: 80%;
@@ -1396,14 +1397,9 @@ flex-grow: 1;
       margin-top: 100px;
   }  
     
-    .openinghours {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        padding: 0;
-    }
+    
 
-    .openinghours figure {
+    .events-forside {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1411,21 +1407,18 @@ flex-grow: 1;
         width: 100%;
     }
 
-    .openinghours figure img {
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
+    .events-forside figure img {
+        margin-right: 10rem;
+        width: 200%;
+
+       
     }
 
-    .openinghours table {
-      margin: 0;
-      padding: 50px;
-    }
 
     #texture {
         margin: 0;
-        margin-top: -87%;
-        margin-left: 5%;
+        margin-top: -190%;
+        margin-right: 5rem;
     
     }
 
@@ -1443,13 +1436,13 @@ flex-grow: 1;
         gap: 20px 0;
     }
 
-    .bar-stuff, .about, .follow-us {
+    .bar-stuff, .about, .follow-us, .events-forside {
         width: 80%;
         margin: 50px auto;
         padding: 0
     }
 
-    .bar-stuff h2, .about h2, .follow-us h2 {
+    .bar-stuff h2, .about h2, .follow-us h2, .events-forside h2 {
         font-size: 3.5rem;
         text-align: left;
         width: 100%;
@@ -1457,7 +1450,7 @@ flex-grow: 1;
     }
 
 
-    .bartekst p, .about p, .follow-us p{
+    .bartekst p, .about p, .follow-us p, .events-forside p{
         text-align: left;
         font-size: 1.5rem;
         margin: 0;
@@ -1471,9 +1464,10 @@ flex-grow: 1;
     }
 
     .knap {
-        margin: 20px auto;
+        margin: 30px auto;
         display: flex;
         justify-content: center;
+
     }
 
     .knap a {
