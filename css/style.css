@@ -459,18 +459,14 @@ header nav img{
     flex-direction: row;
     gap: 10px;
     padding: 0 0 20px 0;
+    margin-right: 10px;
     justify-content: end;
     align-items: end;
     width: 75%;
   }
   
   .pile img {
-    width: 3rem;
-  }
-  
-  
-  .pil-højre {
-    transform: rotate(-180deg);
+    width: 2rem;
   }
   
   .pile img:hover {
@@ -487,9 +483,10 @@ header nav img{
   
   .billede-wrapper {
     width: 75%;
-    overflow: hidden;
+    overflow-x: scroll;
+    border-radius: 10px;
   }
-  
+
   .billede-container {
     display: flex;
     transition: transform 0.5s ease;
@@ -569,57 +566,6 @@ header nav img{
     margin-left: 3%
 }
 
-.follow-us {
-    padding: 50px 100px 0px 100px;
-}
-
-.follow-us h2 {
-    font-size: 5rem;
-    width: 80%;
-    margin-left: 100px;
-}
-
-.follow-us figure {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 35px;
-    margin-top: 50px;
-}
-  
-.follow-us figure img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: .5s;
-}
-
-.follow-us figure img:hover {
-    filter: brightness(50%);
-    transition: .5s;
-}
-.follow-us a {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.follow-us h3 {
-    margin-top: 20px;
-    font-size: 30px;
-    margin-right: 100px;
-    font-weight: 500;
-    color: var(--blue);
-}
-
-
-.follow-us a {
-    text-decoration: none;
-}
-
-.follow-us h3:hover {
-  font-weight: 600;
-}
 
 .footerstreg {
     width: 80%;
@@ -866,7 +812,7 @@ footer h4, footer .ohoverskrift {
 
 .overskrift {
   font-size: 5rem;
-  padding: 100px 0 2rem 0;
+  padding: 0 0 2rem 0;
   width: 80%;
   margin-left: 200px;
 }
@@ -876,7 +822,7 @@ footer h4, footer .ohoverskrift {
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px 30px;
-    padding: 0 100px 100px 100px;
+    padding: 0 100px 200px 100px;
 }
 
 .flip-card-event {
@@ -1027,13 +973,14 @@ footer h4, footer .ohoverskrift {
     font-size: 5rem;
     margin-left: 100px;
     margin-bottom: 10px;
+    margin-top: -3rem;
   }
 
   .discover p {
     margin-left: 100px;
-    margin-bottom: 2rem;
-    width: 80%;
-    font-size: 1.2rem;
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     line-height: 1.5;
   }
 
@@ -1046,11 +993,11 @@ footer h4, footer .ohoverskrift {
   .eventbilleder {
     display: flex;
     justify-content: center;
-    padding: 0 100px 100px 100px;
     height: 50vh;
     width: 80%;
     margin-left: 100px;
     margin-right: 100px;
+    
     gap: 10px;
     
   }
@@ -1160,7 +1107,8 @@ footer h4, footer .ohoverskrift {
 
 .knap-gavekort {
     transition: 1s;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     width: fit-content;
 }
 
@@ -1195,6 +1143,9 @@ footer h4, footer .ohoverskrift {
     margin-top: 50px;
 }
 
+.plusminus {
+    padding-left: 2rem;
+}
 
 
 /* styling af about siden */
@@ -1314,15 +1265,102 @@ flex-grow: 1;
   display: none;
 }
 
+
+.follow-us {
+    padding: 50px 100px 0px 100px;
+}
+
+.follow-us h2 {
+    font-size: 5rem;
+    width: 80%;
+    margin-left: 100px;
+}
+
+.follow-us figure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 50px;
+}
+  
+.follow-us figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.follow-us figure img:hover {
+    filter: brightness(50%);
+    transition: .5s;
+}
+.follow-us a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.follow-us h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-right: 100px;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+
+.follow-us a {
+    text-decoration: none;
+}
+
+.follow-us h3:hover {
+  font-weight: 600;
+}
+
 /* Definering af breakpoints */
 /* __________________________________________________ */
 /* ____________________________________________________ */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1024px) {
+  .flipcards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.flip-card-front h3 {
+  font-size: 2rem;
+}
+
+.openinghours {
+  flex-direction: column;
+  align-items: baseline;
+  gap: 0;
+  padding: 50px;
+}
+
+.openinghours table {
+  margin: 0;
+  margin-left: 100px;
+}
+
+.openinghours figure {
+  align-items: center;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.bar-stuff {
+  margin-bottom: 0px;
+}
 
 }
 
-@media only screen and (max-width: 1080px) {
+
+@media only screen and (max-width: 425px) {
 
     .burgerindhold ul li a {
       font-size: 55px;
@@ -1331,6 +1369,16 @@ flex-grow: 1;
     .flip-card:hover .flip-card-inner {
       transform: none;
     }
+
+    .flipcards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      gap: 50px;
+      margin-top: 100px;
+  }  
     
     .openinghours {
         flex-direction: column;
@@ -1634,12 +1682,13 @@ flex-grow: 1;
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0)
     ), url('../img/gavekort-billede.webp');
-
-  background-position: 25%;
+  background-position: 65%;
+  height: 80vh;
 }
 
 .gavekort-sektion article {
   margin: 0;
+  margin-top: 5rem;
   padding: 100px 0 100px;
 }
 
