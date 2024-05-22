@@ -470,6 +470,11 @@ header nav img{
     width: 2rem;
   }
   
+  
+  .pil-højre {
+    transform: rotate(-180deg);
+  }
+  
   .pile img:hover {
     cursor: pointer;
   }
@@ -507,56 +512,55 @@ header nav img{
     border-radius: 10px;
   }
 
-.openinghours {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 100px;
 
+/* styler event-forside sektionen */
+
+.events-forside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 0;
+    margin-left: 200px;
 }
 
-.openinghours .ohoverskrift{
-    font-size: 3.5rem;
-    margin-top: 100px;
+.events-forside h2 {
+    font-size: 5rem;
     margin-bottom: 20px;
     padding: 0;
     font-weight: 900;
     font-family: "franklin-gothic-urw", sans-serif;
 }
 
-.openinghours table {
-    margin-left: 100px;
+.events-teaser p {
+   width: 20rem;
+   line-height: 1.5;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+
 }
 
-.tbody {
-  width: 50%;
+.event-knap {
+    margin-left: 0;
+    margin-top: 2rem;
 }
 
-.openinghours th {
-    font-size: 1.2rem;
-    text-align: left;
-    font-weight: 300;
+
+.video-forside {
+    margin-top: -2rem;
+    margin-left: 10rem;
 }
 
-.openinghours td {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: right;
-    padding: 10px 0;
-    font-weight: 300;
-}
-
-.openinghours figure {
+.events-forside figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 55%;
 }
 
-.openinghours figure img {
+.events-forside figure img {
     position: relative;
-    width: 90%;
+    width: 110%;
     border-radius: 10px;
     z-index: 1;
 }
@@ -564,8 +568,10 @@ header nav img{
 #texture {
     z-index: -1;
     border-radius: 10px;
-    margin-top: -87%;
-    margin-left: 3%
+    margin-top: -100%;
+    margin-left: 30%;
+    
+    
 }
 
 
@@ -980,13 +986,13 @@ footer h4, footer .ohoverskrift {
   .discover h1 {
     font-size: 5rem;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
   }
 
   .discover p {
     margin-left: 100px;
     width: 70%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.5;
   }
@@ -994,7 +1000,7 @@ footer h4, footer .ohoverskrift {
 .eventbooking {
   margin-left: 100px;
   width: 70%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 3.5rem;
   margin-left: 200px;
   line-height: 1.5;
@@ -1013,9 +1019,11 @@ footer h4, footer .ohoverskrift {
     width: 80%;
     margin-left: 100px;
     margin-right: 100px;
-    
     gap: 10px;
-    
+  }
+
+  .event-galleri{
+    margin-top: 3rem;
   }
 
 .event-galleri .billede-wrapper {
@@ -1182,6 +1190,7 @@ footer h4, footer .ohoverskrift {
   font-size: 5rem;
   margin-left: 100px;
   margin-bottom: 2rem;
+  margin-top: -2rem;
 }
 
 .information {
@@ -1283,7 +1292,7 @@ flex-grow: 1;
 
 
 .follow-us {
-    padding: 50px 100px 0px 100px;
+    padding: 0 100px 0px 100px;
 }
 
 .follow-us h2 {
@@ -1291,19 +1300,17 @@ flex-grow: 1;
     width: 80%;
 }
 
-.follow-us figure {
-    gap: 20px;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr)) ;
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
 }
-  
-.follow-us figure img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: .5s;
+
+.image-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .follow-us figure img:hover {
@@ -1317,10 +1324,8 @@ flex-grow: 1;
 
 .follow-us h3 {
     margin-top: 20px;
-    font-size: 30px;
-    margin-right: 100px;
+    font-size: 1.5rem;
     font-weight: 500;
-    color: var(--blue);
 }
 
 
@@ -1337,6 +1342,7 @@ flex-grow: 1;
 /* ____________________________________________________ */
 
 @media only screen and (max-width: 1024px) {
+
   .flipcards {
     display: flex;
     flex-wrap: nowrap;
@@ -1349,28 +1355,40 @@ flex-grow: 1;
   font-size: 2rem;
 }
 
-.openinghours {
-  flex-direction: column;
-  align-items: baseline;
-  gap: 0;
-  padding: 50px;
-}
 
-.openinghours table {
-  margin: 0;
-  margin-left: 100px;
-}
-
-.openinghours figure {
+.events-forside {
   align-items: center;
   margin-top: 50px;
-  width: 80%;
+  width: 100%;
 }
 
 .bar-stuff {
   margin-bottom: 0px;
 }
+.image-grid {
+grid-template-columns: repeat(2, 1fr);
+}
 
+.about h2, .about p, .about .knap, .bar-stuff h2, .bar-stuff p, .bar-stuff .knap, .events-forside h2, .events-forside p, .events-forside .knap {
+  margin: 0;
+}
+
+.events-forside {
+  padding: 50px 100px;
+  justify-content: flex-start;
+}
+
+.events-teaser {
+  width: 50%;
+}
+
+.video-forside {
+  width: 50%;
+}
+
+.video-forside img {
+  width: 100%;
+}
 }
 
 
@@ -1394,14 +1412,9 @@ flex-grow: 1;
       margin-top: 100px;
   }  
     
-    .openinghours {
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
-        padding: 0;
-    }
+    
 
-    .openinghours figure {
+    .events-forside {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1409,21 +1422,18 @@ flex-grow: 1;
         width: 100%;
     }
 
-    .openinghours figure img {
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
+    .events-forside figure img {
+        margin-right: 10rem;
+        width: 200%;
+
+       
     }
 
-    .openinghours table {
-      margin: 0;
-      padding: 50px;
-    }
 
     #texture {
         margin: 0;
-        margin-top: -87%;
-        margin-left: 5%;
+        margin-top: -190%;
+        margin-right: 5rem;
     
     }
 
@@ -1441,13 +1451,13 @@ flex-grow: 1;
         gap: 20px 0;
     }
 
-    .bar-stuff, .about, .follow-us {
+    .bar-stuff, .about, .follow-us, .events-forside {
         width: 80%;
         margin: 50px auto;
         padding: 0
     }
 
-    .bar-stuff h2, .about h2, .follow-us h2 {
+    .bar-stuff h2, .about h2, .follow-us h2, .events-forside h2 {
         font-size: 3.5rem;
         text-align: left;
         width: 100%;
@@ -1455,7 +1465,7 @@ flex-grow: 1;
     }
 
 
-    .bartekst p, .about p, .follow-us p{
+    .bartekst p, .about p, .follow-us p, .events-forside p{
         text-align: left;
         font-size: 1.5rem;
         margin: 0;
@@ -1469,9 +1479,10 @@ flex-grow: 1;
     }
 
     .knap {
-        margin: 20px auto;
+        margin: 30px auto;
         display: flex;
         justify-content: center;
+
     }
 
     .knap a {
@@ -1480,6 +1491,11 @@ flex-grow: 1;
 
     .about table {
         width: 100%;
+    }
+
+    .events-forside {
+        display: flex;
+        flex-direction: column;
     }
 
     .follow-us figure img {
@@ -1506,10 +1522,10 @@ flex-grow: 1;
         margin-bottom: 30px;
     }
 
-    .follow-us  figure a {
-      width: calc(100% / 1);
-      flex-shrink: 0;
+    .image-grid {
+      grid-template-columns: repeat(1, 1fr);
     }
+
 
     .footerfind iframe {
       width: 100%;
