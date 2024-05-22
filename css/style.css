@@ -960,34 +960,47 @@ footer h4, footer .ohoverskrift {
     font-weight: 400;
   }
 
-  .flip-card-event h3:nth-child(2) {
+  .flip-card-event a h3 {
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
     margin-top: 30px;
   }
 
+  .flip-card-event a h3:hover {
+    color: var(--hellaorange);
+  }
+
+
   .discover {
     margin: 0 auto;
     padding: 100px 100px 0 100px;
   }
 
-  .discover h2 {
+  .discover h1 {
     font-size: 5rem;
     margin-left: 100px;
-    margin-bottom: 10px;
-    margin-top: -3rem;
+    margin-bottom: 20px;
   }
 
   .discover p {
     margin-left: 100px;
     width: 70%;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     line-height: 1.5;
   }
 
-  .discover a {
+.eventbooking {
+  margin-left: 100px;
+  width: 70%;
+  font-size: 1rem;
+  margin-bottom: 3.5rem;
+  margin-left: 200px;
+  line-height: 1.5;
+}
+
+  .eventbooking a {
     font-family: "montserrat", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -1276,7 +1289,6 @@ flex-grow: 1;
 .follow-us h2 {
     font-size: 5rem;
     width: 80%;
-    margin-left: 100px;
 }
 
 .follow-us figure {
@@ -1288,8 +1300,8 @@ flex-grow: 1;
 }
   
 .follow-us figure img {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     border-radius: 10px;
     transition: .5s;
