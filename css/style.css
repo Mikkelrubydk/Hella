@@ -986,13 +986,13 @@ footer h4, footer .ohoverskrift {
   .discover h1 {
     font-size: 5rem;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
   }
 
   .discover p {
     margin-left: 100px;
     width: 70%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.5;
   }
@@ -1000,7 +1000,7 @@ footer h4, footer .ohoverskrift {
 .eventbooking {
   margin-left: 100px;
   width: 70%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 3.5rem;
   margin-left: 200px;
   line-height: 1.5;
@@ -1019,9 +1019,11 @@ footer h4, footer .ohoverskrift {
     width: 80%;
     margin-left: 100px;
     margin-right: 100px;
-    
     gap: 10px;
-    
+  }
+
+  .event-galleri{
+    margin-top: 3rem;
   }
 
 .event-galleri .billede-wrapper {
