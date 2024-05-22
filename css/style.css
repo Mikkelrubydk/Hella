@@ -1354,18 +1354,11 @@ flex-grow: 1;
   font-size: 2rem;
 }
 
+
 .events-forside {
-  flex-direction: column;
-  align-items: baseline;
-  gap: 0;
-  padding: 50px;
-}
-
-
-.events-forside figure {
   align-items: center;
   margin-top: 50px;
-  width: 80%;
+  width: 100%;
 }
 
 .bar-stuff {
@@ -1373,6 +1366,27 @@ flex-grow: 1;
 }
 .image-grid {
 grid-template-columns: repeat(2, 1fr);
+}
+
+.about h2, .about p, .about .knap, .bar-stuff h2, .bar-stuff p, .bar-stuff .knap, .events-forside h2, .events-forside p, .events-forside .knap {
+  margin: 0;
+}
+
+.events-forside {
+  padding: 50px 100px;
+  justify-content: flex-start;
+}
+
+.events-teaser {
+  width: 50%;
+}
+
+.video-forside {
+  width: 50%;
+}
+
+.video-forside img {
+  width: 100%;
 }
 }
 
