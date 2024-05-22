@@ -459,13 +459,14 @@ header nav img{
     flex-direction: row;
     gap: 10px;
     padding: 0 0 20px 0;
+    margin-right: 10px;
     justify-content: end;
     align-items: end;
     width: 75%;
   }
   
   .pile img {
-    width: 3rem;
+    width: 2rem;
   }
   
   
@@ -487,9 +488,10 @@ header nav img{
   
   .billede-wrapper {
     width: 75%;
-    overflow: hidden;
+    overflow-x: scroll;
+    border-radius: 10px;
   }
-  
+
   .billede-container {
     display: flex;
     transition: transform 0.5s ease;
