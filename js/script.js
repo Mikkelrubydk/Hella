@@ -65,7 +65,7 @@ if (window.matchMedia('(max-width: 1080px)').matches) {
   document.querySelectorAll('.flip-card').forEach(function(card) {
       card.addEventListener('click', function() {
 
-          const flipCardH3 = document.querySelector('.flip-card-front h3');
+          const flipCardH3 = card.querySelector('.flip-card-front h3');
           const flipCardInner = card.querySelector('.flip-card-inner');
           if (flipCardInner.style.transform === 'rotateY(180deg)') {
               flipCardInner.style.transform = 'rotateY(0deg)';
