@@ -59,13 +59,21 @@ pilNed.addEventListener('click', function() {
 
 if (window.matchMedia('(max-width: 1080px)').matches) {
   // Sørger for at koden kun kører, når brugeren er på mobilen
+
+
+
   document.querySelectorAll('.flip-card').forEach(function(card) {
       card.addEventListener('click', function() {
-          var flipCardInner = card.querySelector('.flip-card-inner');
+
+          const flipCardH3 = document.querySelector('.flip-card-front h3');
+          const flipCardInner = card.querySelector('.flip-card-inner');
           if (flipCardInner.style.transform === 'rotateY(180deg)') {
               flipCardInner.style.transform = 'rotateY(0deg)';
+              flipCardH3.style.opacity = '0'
+
           } else {
               flipCardInner.style.transform = 'rotateY(180deg)';
+              flipCardH3.style.opacity = '1'
           }
       });
   });
