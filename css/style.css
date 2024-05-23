@@ -1801,7 +1801,7 @@ grid-template-columns: repeat(2, 1fr);
       rgba(0, 0, 0, 0)
     ), url('../img/gavekort-billede.webp');
   background-position: 65%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .gavekort-sektion article {
