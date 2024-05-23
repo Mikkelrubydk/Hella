@@ -352,6 +352,7 @@ header nav img{
   .flip-card-front {
     background-color: #bbb;
     overflow: hidden;
+    backface-visibility: hidden; /* Sørger for at indholdet fra flipcard-front ikke følger med når kortet flipper 180deg */
   }
 
   .flip-card-front h3 {
