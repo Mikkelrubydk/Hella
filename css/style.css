@@ -1604,6 +1604,7 @@ grid-template-columns: repeat(2, 1fr);
       flex-direction: column;
       padding: 100px 0 100px 0;
       margin: 0;
+      max-width: 100%;
     }
 
     .beskrivelse {
@@ -1612,8 +1613,9 @@ grid-template-columns: repeat(2, 1fr);
 
     .menunavigation {
       position: static;
-      width: 70%;
+      width: 100%;
       margin-bottom: 100px;
+      padding: 20px;
     }
 
     .menunavigation.absolute {
@@ -1622,42 +1624,58 @@ grid-template-columns: repeat(2, 1fr);
 
     .menuindhold {
       margin: 0;
-      padding: 50px;
       width: 100%;
+      padding: 20px;
     }
 
     .menuindhold h2 {
       font-size: 2.5rem;
     }
 
+
     .menuindhold .barstuffindhold {
       display: grid;
       grid-template-columns: repeat(2, 1fr); 
       grid-template-rows: repeat(2, 1fr); 
       gap: 50px; 
+      max-width: 100%;
+      padding-bottom: 0;
 }
 
 .menuindhold .seasonalindhold {
     grid-template-columns: repeat(2, 1fr); 
     gap: 50px; 
+    max-width: 100%;
+    padding-bottom: 0;
 }
 
 .menuindhold .fridgeindhold {
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: none;
-    margin: 100px 0;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px; 
+    max-width: 100%;
+    padding-bottom: 0;
 }
 
 .menuindhold .nonalcoholindhold {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 50px; 
+    max-width: 100%;
+    padding-bottom: 0;
 }
 
 .menuindhold .kitchenindhold {
-    margin: 100px 0;
     grid-template-columns: repeat(2, 1fr); 
     gap: 50px; 
+    max-width: 100%;
+    padding-bottom: 0;
+}
+
+.menuindhold p {
+  font-size: 1rem;
+}
+
+.menuindhold .beskrivelse {
+  max-width: 100%;
 }
 
 /* STYLING AF BREAKPOINTS VED EVENTS.HTML */
