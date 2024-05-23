@@ -69,11 +69,11 @@ if (window.matchMedia('(max-width: 1080px)').matches) {
           const flipCardInner = card.querySelector('.flip-card-inner');
           if (flipCardInner.style.transform === 'rotateY(180deg)') {
               flipCardInner.style.transform = 'rotateY(0deg)';
-              flipCardH3.style.opacity = '0'
+              flipCardH3.style.opacity = '1'
 
           } else {
               flipCardInner.style.transform = 'rotateY(180deg)';
-              flipCardH3.style.opacity = '1'
+              flipCardH3.style.opacity = '0'
           }
       });
   });
